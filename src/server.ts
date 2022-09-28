@@ -1,3 +1,5 @@
-import { driverData } from "./scraper/driver-data";
+import { getDriverData } from "./scraper/driver-data";
+import { getTeamsData } from "./scraper/team-data";
 
-driverData();
+// getDriverData();
+// getTeamsData()

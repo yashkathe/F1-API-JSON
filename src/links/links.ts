@@ -1,7 +1,6 @@
 interface Links {
     drivers: string
     teams: string
-
 }
 
 export const links: Links = {

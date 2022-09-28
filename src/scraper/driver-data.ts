@@ -12,7 +12,7 @@ interface drivers {
     driverImage: string | undefined
 }
 
-export function driverData() {
+export function getDriverData() {
 
     let driversArray: drivers[] = []
 
@@ -39,14 +39,9 @@ export function driverData() {
                         nationalityImage,
                         driverImage
                     }
-
                     driversArray.push(driversObj)
-
                 }
-            }
-        )
-
+            })
         console.log(driversArray)
-
     })
 }
