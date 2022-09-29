@@ -1,7 +1,7 @@
 import axios from "axios";
 import cheerio from "cheerio"
 
-import { links } from "../links/links"
+import { staticLinks } from "../links/links";
 
 interface teams {
     name: string
@@ -16,7 +16,7 @@ export function getTeamsData() {
 
     let teamsArray: teams[] = []
 
-    axios(links.teams).then(response => {
+    axios(staticLinks.teams).then(response => {
         const html = response.data
         const $ = cheerio.load(html)
 

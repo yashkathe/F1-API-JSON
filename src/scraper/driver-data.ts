@@ -1,7 +1,7 @@
 import axios from 'axios'
 import cheerio from 'cheerio'
 
-import { links } from '../links/links'
+import { staticLinks } from "../links/links";
 
 interface drivers {
     name: string
@@ -16,7 +16,7 @@ export function getDriverData() {
 
     let driversArray: drivers[] = []
 
-    axios(links.drivers).then(response => {
+    axios(staticLinks.drivers).then(response => {
         const html = response.data
         const $ = cheerio.load(html)
 
