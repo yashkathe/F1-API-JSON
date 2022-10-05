@@ -3,7 +3,7 @@ import cheerio from 'cheerio'
 
 import { staticLinks } from "../endpoints/endpoints";
 
-interface drivers {
+type drivers = {
     name: string
     team: string
     rank: number

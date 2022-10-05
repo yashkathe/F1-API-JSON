@@ -3,7 +3,7 @@ import cheerio from "cheerio"
 
 import { dynamicLinks } from "../endpoints/endpoints"
 
-interface driverStanding {
+type driverStanding = {
     position: number
     driver: string
     nationality: string
@@ -11,7 +11,7 @@ interface driverStanding {
     points: number
 }
 
-export const getDriverStandings = (year: number): Promise<driverStanding[]> => {
+export const getDriverStandings = (year: number = new Date().getFullYear()): Promise<driverStanding[]> => {
 
     let driverStandings: driverStanding[] = []
 
