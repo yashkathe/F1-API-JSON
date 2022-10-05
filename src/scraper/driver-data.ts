@@ -1,7 +1,7 @@
 import axios from 'axios'
 import cheerio from 'cheerio'
 
-import { staticLinks } from "../links/links";
+import { staticLinks } from "../endpoints/endpoints";
 
 interface drivers {
     name: string

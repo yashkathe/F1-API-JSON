@@ -1,13 +1,13 @@
 import axios from "axios"
 import cheerio from "cheerio"
 
-import { dynamicLinks } from "../links/links"
+import { dynamicLinks } from "../endpoints/endpoints"
 
 interface driverStanding {
     position: number
     driver: string
     nationality: string
-    car: string
+    team: string
     points: number
 }
 
@@ -21,7 +21,7 @@ export const getDriverStandings = (year: number): Promise<driverStanding[]> => {
                 response => {
                     const html = response.data
                     const $ = cheerio.load(html)
-                    // 
+
                     $('tr').each(
                         function () {
                             const position: number = parseInt($(this).find(' td:nth-child(2) ').text())
@@ -31,15 +31,15 @@ export const getDriverStandings = (year: number): Promise<driverStanding[]> => {
 
                             const driver = firstName.concat(" ", lastName)
                             const nationality: string = $(this).find(' td.dark.semi-bold.uppercase').text()
-                            const car: string = $(this).find('td:nth-child(5) > a.grey.semi-bold.uppercase.ArchiveLink').text()
+                            const team: string = $(this).find('td:nth-child(5) > a.grey.semi-bold.uppercase.ArchiveLink').text()
                             const points: number = parseInt($(this).find(' td:nth-child(6) ').text())
 
-                            if (position !== NaN && points !== NaN && driver.length !== 0 && nationality.length !== 0 && car.length !== 0) {
+                            if (position !== NaN && points !== NaN && driver.length !== 0 && nationality.length !== 0 && team.length !== 0) {
                                 const driverStanding: driverStanding = {
                                     position,
                                     driver,
                                     nationality,
-                                    car,
+                                    team,
                                     points
                                 }
                                 driverStandings.push(driverStanding)
