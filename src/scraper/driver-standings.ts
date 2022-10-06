@@ -34,7 +34,7 @@ export const getDriverStandings = (year: number = new Date().getFullYear()): Pro
                             const team: string = $(this).find('td:nth-child(5) > a.grey.semi-bold.uppercase.ArchiveLink').text()
                             const points: number = parseInt($(this).find(' td:nth-child(6) ').text())
 
-                            if (position !== NaN && points !== NaN && driver.length !== 0 && nationality.length !== 0 && team.length !== 0) {
+                            if (!Number.isNaN(position) && !Number.isNaN(points) && driver.length !== 0 && nationality.length !== 0 && team.length !== 0) {
                                 const driverStanding: driverStanding = {
                                     position,
                                     driver,
@@ -46,7 +46,6 @@ export const getDriverStandings = (year: number = new Date().getFullYear()): Pro
                             }
                         })
                     resolve(driverStandings)
-                    return Promise.all(driverStandings)
                 })
             .catch(err => { reject(err) })
     })

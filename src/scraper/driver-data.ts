@@ -32,7 +32,7 @@ export const getDriverData = (): Promise<drivers[]> => {
                         const nationalityImage: string | undefined = $(this).find('.container > .row.justify-content-between.align-items-center.listing-item--head > .col-xs-4.country-flag > picture:nth-child(1) > img:nth-child(2)').attr('data-src')
                         const driverImage: string | undefined = $(this).find(' div:nth-child(4) > picture:nth-child(1) > img:nth-child(2)').attr('data-src')
 
-                        if (firstName.length !== 0 && secondName.length !== 0 && team.length !== 0 && rank !== NaN && points !== NaN) {
+                        if (firstName.length !== 0 && secondName.length !== 0 && team.length !== 0 && !Number.isNaN(rank) && !Number.isNaN(points)) {
                             const driver: drivers = {
                                 name: firstName.concat(" ", secondName),
                                 team,
@@ -45,7 +45,6 @@ export const getDriverData = (): Promise<drivers[]> => {
                         }
                     })
                 resolve(drivers)
-                return Promise.all(drivers)
             })
             .catch(err => { reject(err) })
     })

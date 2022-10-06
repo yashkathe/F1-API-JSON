@@ -39,7 +39,7 @@ export const getTeamsData = (): Promise<teams[]> => {
                         const carLogo: string | undefined = $(this).find('div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > picture:nth-child(1) > img:nth-child(2)').attr('data-src')
                         const carImage: string | undefined = $(this).find('div:nth-child(1) > div:nth-child(4) > picture:nth-child(1) > img:nth-child(5)').attr('data-src')
 
-                        if (name.length !== 0 && points !== NaN && rank !== NaN) {
+                        if (name.length !== 0 && !Number.isNaN(points) && !Number.isNaN(rank)) {
                             const team: teams = {
                                 name,
                                 drivers,
@@ -52,7 +52,6 @@ export const getTeamsData = (): Promise<teams[]> => {
                         }
                     })
                 resolve(teams)
-                return Promise.all(teams)
             })
             .catch(err => { reject(err) })
     })

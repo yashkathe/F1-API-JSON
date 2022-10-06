@@ -26,7 +26,7 @@ export const getConstructorStandings = (year: number = new Date().getFullYear())
                             const team: string = $(this).find('td:nth-child(3)').text().trim()
                             const points: number = parseInt($(this).find('td:nth-child(4)').text().trim())
 
-                            if (position !== NaN && team.length !== 0 && points !== NaN) {
+                            if (!Number.isNaN(position) && team.length !== 0 && !Number.isNaN(points)) {
                                 const constructorStanding: constructorStanding = {
                                     position,
                                     team,
@@ -36,7 +36,6 @@ export const getConstructorStandings = (year: number = new Date().getFullYear())
                             }
                         })
                     resolve(constructorStandings)
-                    return Promise.all(constructorStandings)
                 })
             .catch(err => { reject(err) })
     })
