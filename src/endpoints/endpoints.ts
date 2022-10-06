@@ -1,6 +1,7 @@
 interface staticLinks {
     drivers: string
     teams: string
+    hallOfFame: string
 }
 
 interface dynamicLinks {
@@ -13,6 +14,7 @@ interface dynamicLinks {
 export const staticLinks: staticLinks = {
     drivers: "https://www.formula1.com/en/drivers.html",
     teams: "https://www.formula1.com/en/teams.html",
+    hallOfFame: "https://www.formula1.com/en/drivers/hall-of-fame.html"
 }
 
 export const dynamicLinks: dynamicLinks = {

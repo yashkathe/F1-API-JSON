@@ -1,6 +1,6 @@
 # F1 API
 
-The following scraper scrapes this given [website](https://www.formula1.com/en.html)
+The scraper scrapes this given https://www.formula1.com/
 
 ## Functions added
 
@@ -12,3 +12,9 @@ The following scraper scrapes this given [website](https://www.formula1.com/en.h
 
 - getDriverStandings   
   Fetch F1 driver standings from points table  
+
+- getConstructorStandings  
+  Fetch Constructors standings from points table
+
+- getWorldChampions  
+  Fetch all the world champions 
