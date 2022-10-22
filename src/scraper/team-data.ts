@@ -3,14 +3,7 @@ import cheerio from "cheerio"
 
 import { staticLinks } from "../endpoints/endpoints";
 
-type teams = {
-    name: string
-    drivers: string[]
-    points: number
-    rank: number
-    carLogo: string | undefined
-    carImage: string | undefined
-}
+import { teams } from "../types/types"
 
 export const getTeamsData = (): Promise<teams[]> => {
 

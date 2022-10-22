@@ -3,13 +3,7 @@ import cheerio from "cheerio"
 
 import { dynamicLinks } from "../endpoints/endpoints"
 
-type driverStanding = {
-    position: number
-    driver: string
-    nationality: string
-    team: string
-    points: number
-}
+import { driverStanding } from "../types/types";
 
 export const getDriverStandings = (year: number = new Date().getFullYear()): Promise<driverStanding[]> => {
 

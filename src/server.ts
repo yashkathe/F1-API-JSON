@@ -1,13 +1,13 @@
-import { getDriverData } from "./scraper/driver-data";
-import { getTeamsData } from "./scraper/team-data";
-import { getDriverStandings } from "./scraper/driver-standings";
-import { getConstructorStandings } from './scraper/constructors-standings';
-import { getWorldChampions } from './scraper/world-champions'
+import { getDriverData } from './scraper/driver-data';
+export { getDriverData } from "./scraper/driver-data";
+export { getTeamsData } from "./scraper/team-data";
+export { getDriverStandings } from "./scraper/driver-standings";
+export { getConstructorStandings } from './scraper/constructors-standings';
+export { getWorldChampions } from './scraper/world-champions'
 
-export {
-    getDriverData,
-    getTeamsData,
-    getDriverStandings,
-    getConstructorStandings,
-    getWorldChampions
+const fun = async () => {
+    const a = await getDriverData()
+    console.log(a)
 }
+
+fun()

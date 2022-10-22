@@ -3,10 +3,7 @@ import cheerio from "cheerio"
 
 import { staticLinks } from "../endpoints/endpoints"
 
-type hallOfFame = {
-    name: string
-    years: number[]
-}
+import { hallOfFame } from "../types/types"
 
 export const getWorldChampions = (): Promise<hallOfFame[]> => {
     let worldChampions: any = []

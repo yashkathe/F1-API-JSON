@@ -1,0 +1,235 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`hall of fame 1`] = `
+[
+  {
+    "name": "Nino Farina ",
+    "years": [
+      1950,
+    ],
+  },
+  {
+    "name": "Juan Manuel Fangio ",
+    "years": [
+      1951,
+      1954,
+    ],
+  },
+  {
+    "name": "Alberto Ascari ",
+    "years": [
+      1952,
+      1953,
+    ],
+  },
+  {
+    "name": "Mike Hawthorn ",
+    "years": [
+      1958,
+    ],
+  },
+  {
+    "name": "Jack Brabham ",
+    "years": [
+      1959,
+      1960,
+      1966,
+    ],
+  },
+  {
+    "name": "Phil Hill ",
+    "years": [
+      1961,
+    ],
+  },
+  {
+    "name": "Graham Hill ",
+    "years": [
+      1962,
+      1968,
+    ],
+  },
+  {
+    "name": "Jim Clark ",
+    "years": [
+      1963,
+      1965,
+    ],
+  },
+  {
+    "name": "John Surtees ",
+    "years": [
+      1964,
+    ],
+  },
+  {
+    "name": "Denny Hulme ",
+    "years": [
+      1967,
+    ],
+  },
+  {
+    "name": "Jackie Stewart ",
+    "years": [
+      1969,
+      1971,
+      1973,
+    ],
+  },
+  {
+    "name": "Jochen Rindt ",
+    "years": [
+      1970,
+    ],
+  },
+  {
+    "name": "Emerson Fittipaldi ",
+    "years": [
+      1972,
+      1974,
+    ],
+  },
+  {
+    "name": "Niki Lauda ",
+    "years": [
+      1975,
+      1977,
+      1984,
+    ],
+  },
+  {
+    "name": "James Hunt ",
+    "years": [
+      1976,
+    ],
+  },
+  {
+    "name": "Mario Andretti ",
+    "years": [
+      1978,
+    ],
+  },
+  {
+    "name": "Jody Scheckter ",
+    "years": [
+      1979,
+    ],
+  },
+  {
+    "name": "Alan Jones ",
+    "years": [
+      1980,
+    ],
+  },
+  {
+    "name": "Nelson Piquet ",
+    "years": [
+      1981,
+      1983,
+      1987,
+    ],
+  },
+  {
+    "name": "Keke Rosberg ",
+    "years": [
+      1982,
+    ],
+  },
+  {
+    "name": "Alain Prost ",
+    "years": [
+      1985,
+      1986,
+      1989,
+      1993,
+    ],
+  },
+  {
+    "name": "Ayrton Senna ",
+    "years": [
+      1988,
+      1990,
+      1991,
+    ],
+  },
+  {
+    "name": "Nigel Mansell ",
+    "years": [
+      1992,
+    ],
+  },
+  {
+    "name": "Michael Schumacher ",
+    "years": [
+      1994,
+      1995,
+      2000,
+    ],
+  },
+  {
+    "name": "Damon Hill ",
+    "years": [
+      1996,
+    ],
+  },
+  {
+    "name": "Jacques Villeneuve ",
+    "years": [
+      1997,
+    ],
+  },
+  {
+    "name": "Mika Hakkinen ",
+    "years": [
+      1998,
+      1999,
+    ],
+  },
+  {
+    "name": "Fernando Alonso ",
+    "years": [
+      2005,
+      2006,
+    ],
+  },
+  {
+    "name": "Kimi Raikkonen ",
+    "years": [
+      2007,
+    ],
+  },
+  {
+    "name": "Lewis Hamilton ",
+    "years": [
+      2008,
+      2014,
+      2015,
+      2017,
+    ],
+  },
+  {
+    "name": "Jenson Button ",
+    "years": [
+      2009,
+    ],
+  },
+  {
+    "name": "Sebastian Vettel ",
+    "years": [
+      2010,
+    ],
+  },
+  {
+    "name": "Nico Rosberg ",
+    "years": [
+      2016,
+    ],
+  },
+  {
+    "name": "Max Verstappen ",
+    "years": [
+      2021,
+    ],
+  },
+]
+`;

@@ -1,0 +1,56 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`constrcutor standings 1`] = `
+[
+  {
+    "points": 619,
+    "position": 1,
+    "team": "Red Bull Racing RBPT",
+  },
+  {
+    "points": 454,
+    "position": 2,
+    "team": "Ferrari",
+  },
+  {
+    "points": 387,
+    "position": 3,
+    "team": "Mercedes",
+  },
+  {
+    "points": 143,
+    "position": 4,
+    "team": "Alpine Renault",
+  },
+  {
+    "points": 130,
+    "position": 5,
+    "team": "McLaren Mercedes",
+  },
+  {
+    "points": 52,
+    "position": 6,
+    "team": "Alfa Romeo Ferrari",
+  },
+  {
+    "points": 45,
+    "position": 7,
+    "team": "Aston Martin Aramco Mercedes",
+  },
+  {
+    "points": 34,
+    "position": 8,
+    "team": "Haas Ferrari",
+  },
+  {
+    "points": 34,
+    "position": 9,
+    "team": "AlphaTauri RBPT",
+  },
+  {
+    "points": 8,
+    "position": 10,
+    "team": "Williams Mercedes",
+  },
+]
+`;

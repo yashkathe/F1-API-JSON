@@ -3,14 +3,7 @@ import cheerio from 'cheerio'
 
 import { staticLinks } from "../endpoints/endpoints";
 
-type drivers = {
-    name: string
-    team: string
-    rank: number
-    points: number
-    nationalityImage: string | undefined
-    driverImage: string | undefined
-}
+import { drivers } from "../types/types"
 
 export const getDriverData = (): Promise<drivers[]> => {
 

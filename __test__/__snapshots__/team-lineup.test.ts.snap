@@ -1,0 +1,116 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`current teams data 1`] = `
+[
+  {
+    "carImage": "https://www.formula1.com/content/dam/fom-website/teams/2022/red-bull-racing.png.transform/4col/image.png",
+    "carLogo": "https://www.formula1.com/content/dam/fom-website/teams/2022/red-bull-racing-logo.png.transform/2col/image.png",
+    "drivers": [
+      "Sergio Perez",
+      "Max Verstappen",
+    ],
+    "name": "Red Bull Racing",
+    "points": 619,
+    "rank": 1,
+  },
+  {
+    "carImage": "https://www.formula1.com/content/dam/fom-website/teams/2022/ferrari.png.transform/4col/image.png",
+    "carLogo": "https://www.formula1.com/content/dam/fom-website/teams/2022/ferrari-logo.png.transform/2col/image.png",
+    "drivers": [
+      "Carlos Sainz",
+      "Charles Leclerc",
+    ],
+    "name": "Ferrari",
+    "points": 454,
+    "rank": 2,
+  },
+  {
+    "carImage": "https://www.formula1.com/content/dam/fom-website/teams/2022/mercedes.png.transform/4col/image.png",
+    "carLogo": "https://www.formula1.com/content/dam/fom-website/teams/2022/mercedes-logo.png.transform/2col/image.png",
+    "drivers": [
+      "George Russell",
+      "Lewis Hamilton",
+    ],
+    "name": "Mercedes",
+    "points": 387,
+    "rank": 3,
+  },
+  {
+    "carImage": "https://www.formula1.com/content/dam/fom-website/teams/2022/alpine.png.transform/4col/image.png",
+    "carLogo": "https://www.formula1.com/content/dam/fom-website/teams/2022/alpine-logo.png.transform/2col/image.png",
+    "drivers": [
+      "Fernando Alonso",
+      "Esteban Ocon",
+    ],
+    "name": "Alpine",
+    "points": 143,
+    "rank": 4,
+  },
+  {
+    "carImage": "https://www.formula1.com/content/dam/fom-website/teams/2022/mclaren.png.transform/4col/image.png",
+    "carLogo": "https://www.formula1.com/content/dam/fom-website/teams/2022/mclaren-logo.png.transform/2col/image.png",
+    "drivers": [
+      "Lando Norris",
+      "Daniel Ricciardo",
+    ],
+    "name": "McLaren",
+    "points": 130,
+    "rank": 5,
+  },
+  {
+    "carImage": "https://www.formula1.com/content/dam/fom-website/teams/2022/alfa-romeo.png.transform/4col/image.png",
+    "carLogo": "https://www.formula1.com/content/dam/fom-website/teams/2022/alfa-romeo-logo.png.transform/2col/image.png",
+    "drivers": [
+      "Valtteri Bottas",
+      "Guanyu Zhou",
+    ],
+    "name": "Alfa Romeo",
+    "points": 52,
+    "rank": 6,
+  },
+  {
+    "carImage": "https://www.formula1.com/content/dam/fom-website/teams/2022/aston-martin.png.transform/4col/image.png",
+    "carLogo": "https://www.formula1.com/content/dam/fom-website/teams/2022/aston-martin-logo.png.transform/2col/image.png",
+    "drivers": [
+      "Lance Stroll",
+      "Sebastian Vettel",
+    ],
+    "name": "Aston Martin",
+    "points": 45,
+    "rank": 7,
+  },
+  {
+    "carImage": "https://www.formula1.com/content/dam/fom-website/teams/2022/haas-f1-team.png.transform/4col/image.png",
+    "carLogo": "https://www.formula1.com/content/dam/fom-website/teams/2022/haas-f1-team-logo.png.transform/2col/image.png",
+    "drivers": [
+      "Kevin Magnussen",
+      "Mick Schumacher",
+    ],
+    "name": "Haas F1 Team",
+    "points": 34,
+    "rank": 8,
+  },
+  {
+    "carImage": "https://www.formula1.com/content/dam/fom-website/teams/2022/alphatauri.png.transform/4col/image.png",
+    "carLogo": "https://www.formula1.com/content/dam/fom-website/teams/2022/alphatauri-logo.png.transform/2col/image.png",
+    "drivers": [
+      "Pierre Gasly",
+      "Yuki Tsunoda",
+    ],
+    "name": "AlphaTauri",
+    "points": 34,
+    "rank": 9,
+  },
+  {
+    "carImage": "https://www.formula1.com/content/dam/fom-website/teams/2022/williams.png.transform/4col/image.png",
+    "carLogo": "https://www.formula1.com/content/dam/fom-website/teams/2022/williams-logo.png.transform/2col/image.png",
+    "drivers": [
+      "Nicholas Latifi",
+      "Alexander Albon",
+    ],
+    "name": "Williams",
+    "points": 8,
+    "rank": 10,
+  },
+]
+`;

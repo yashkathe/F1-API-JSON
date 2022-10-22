@@ -3,11 +3,7 @@ import cheerio from "cheerio"
 
 import { dynamicLinks } from "../endpoints/endpoints"
 
-type constructorStanding = {
-    position: number
-    team: string
-    points: number
-}
+import {constructorStanding} from "../types/types"
 
 export const getConstructorStandings = (year: number = new Date().getFullYear()): Promise<constructorStanding[]> => {
 
