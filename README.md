@@ -1,20 +1,56 @@
 # F1 API
-
+![f1](https://assets.stickpng.com/images/61fc01fe3cf0e70004222071.png)  
 The scraper scrapes this given https://www.formula1.com/
 
-## Functions added
+## Functions
 
-- getDriverData  
-  Fetch the current list of F1 drivers along with their information 
+- **getConstructorStandings**  
+  
+  Fetch Constructors standings from points table.  
+  The function takes one argument: The year from which you want to extract points table for.  
+  Default argument is the current year.  
+ 
+- **getDriverStandings**   
+  Fetch F1 driver standings from points table.    
+  The function takes one argument: The year from which you want to extract points table for.      
+  Default argument is the current year. 
 
-- getTeamsData  
-  Fetch the current list of F1 teams along with their information
+- **getDriverData**  
+  Fetch the current lineup of F1 drivers.  
+  _No arguments_
 
-- getDriverStandings   
-  Fetch F1 driver standings from points table  
+- **getTeamsData**  
+  Fetch the current list of F1 teams along with their information.  
+  _No arguments_
+  
+- **getWorldChampions**  
+  Fetch all the world champions  
+  _No arguments_
 
-- getConstructorStandings  
-  Fetch Constructors standings from points table
+## Snapshots
 
-- getWorldChampions  
-  Fetch all the world champions 
+If you want to have a look at the output from the given functions check [this](https://github.com/yashkathe/F1-API/tree/master/__tests__/__snapshots__).
+
+## Example snippet
+
+Example on how to use one the given functions.  
+The following function will print the current lineup of F1 drivers.
+
+```javascript
+const f1Api = require('f1-api') 
+
+const myFunction = async () => {
+    const driverLineup = await f1Api.getDriverData()
+    console.log(driverLineup)
+}
+
+myFunction()
+```
+
+## Usage
+WARNING: Abusing this library may result in an IP ban from the host website.  
+Please use with caution and try to limit the rate and amount of your requests if you value your access to formula1.com
+
+## Report Problems
+
+If you have any problems regarding this project, read the following [disclaimer](https://github.com/yashkathe/F1-API/blob/master/DISCLAIMER.md).  

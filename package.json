@@ -10,7 +10,7 @@
         "start": "nodemon './dist/server.js'",
         "test": "jest"
     },
-    "keywords": [],
+    "keywords": ["F1" , "Formula1", "Formula1-data", "F1-API" , "Formula1-API"],
     "author": "",
     "license": "ISC",
     "devDependencies": {
