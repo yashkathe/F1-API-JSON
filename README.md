@@ -1,7 +1,13 @@
-# F1 API
-![f1](https://assets.stickpng.com/images/61fc01fe3cf0e70004222071.png)  
+# Formula1 API
+![f1](https://logodownload.org/wp-content/uploads/2016/11/formula-1-logo-7.png)  
+
+
 The scraper scrapes this given https://www.formula1.com/
 
+## Installation
+```bash
+npm i f1-api-node
+```
 ## Functions
 
 - **getConstructorStandings**  
@@ -33,11 +39,11 @@ If you want to have a look at the output from the given functions check [this](h
 
 ## Example snippet
 
-Example on how to use one the given functions.  
+Example on how to use one of the given functions.  
 The following function will print the current lineup of F1 drivers.
 
 ```javascript
-const f1Api = require('f1-api') 
+const f1Api = require('f1-api-node') 
 
 const myFunction = async () => {
     const driverLineup = await f1Api.getDriverData()
