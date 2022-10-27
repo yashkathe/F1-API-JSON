@@ -1,20 +1,38 @@
 {
     "name": "f1-api-node",
-    "version": "0.1.1",
+    "version": "0.1.2",
     "description": "A simple library written in typescript to fetch Formula-1 data",
     "main": "dist/server.js",
+    "types": "dist/server.d.ts",
     "files": [
-        "dist"
+        "dist",
+        "README.md"
     ],
     "scripts": {
         "start": "nodemon './dist/server.js'",
         "test": "jest",
-        "build":"tsc -p ."
+        "build": "tsc -p ."
     },
-    "keywords": ["F1" , "Formula1", "Formula1-data", "F1-API" , "Formula1-API"],
-    "author": "Yash Kathe",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/yashkathe/F1-API"
+    },
+    "keywords": [
+        "F1",
+        "Formula1",
+        "Formula1-data",
+        "F1-API",
+        "Formula1-API",
+        "f1-api-node"
+    ],
+    "author": {
+        "email": "katheyash@yahoo.com",
+        "name": "Yash Kathe"
+    },
     "license": "GPL-3.0",
+    "bugs":"https://github.com/yashkathe/F1-API/issues",
     "devDependencies": {
+        "@types/cheerio": "^0.22.31",
         "@types/jest": "^29.1.1",
         "jest": "^29.1.2",
         "nodemon": "^2.0.20",
@@ -23,7 +41,6 @@
         "typescript": "^4.8.4"
     },
     "dependencies": {
-        "@types/cheerio": "^0.22.31",
         "axios": "^0.27.2",
         "cheerio": "^1.0.0-rc.12"
     }

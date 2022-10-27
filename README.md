@@ -2,7 +2,7 @@
 ![f1](https://logodownload.org/wp-content/uploads/2016/11/formula-1-logo-7.png)  
 
 
-The scraper scrapes this given https://www.formula1.com/
+The scraper scrapes this website: https://www.formula1.com
 
 ## Installation
 ```bash
