@@ -3,47 +3,47 @@
 exports[`constrcutor standings 1`] = `
 [
   {
-    "points": 656,
+    "points": 759,
     "position": 1,
     "team": "Red Bull Racing RBPT",
   },
   {
-    "points": 469,
+    "points": 554,
     "position": 2,
     "team": "Ferrari",
   },
   {
-    "points": 416,
+    "points": 515,
     "position": 3,
     "team": "Mercedes",
   },
   {
-    "points": 144,
+    "points": 173,
     "position": 4,
     "team": "Alpine Renault",
   },
   {
-    "points": 138,
+    "points": 159,
     "position": 5,
     "team": "McLaren Mercedes",
   },
   {
-    "points": 52,
+    "points": 55,
     "position": 6,
     "team": "Alfa Romeo Ferrari",
   },
   {
-    "points": 51,
+    "points": 55,
     "position": 7,
     "team": "Aston Martin Aramco Mercedes",
   },
   {
-    "points": 38,
+    "points": 37,
     "position": 8,
     "team": "Haas Ferrari",
   },
   {
-    "points": 36,
+    "points": 35,
     "position": 9,
     "team": "AlphaTauri RBPT",
   },

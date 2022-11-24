@@ -10,18 +10,18 @@ exports[`current teams data 1`] = `
       "Sergio Perez",
     ],
     "name": "Red Bull Racing",
-    "points": 656,
+    "points": 759,
     "rank": 1,
   },
   {
     "carImage": "https://www.formula1.com/content/dam/fom-website/teams/2022/ferrari.png.transform/4col/image.png",
     "carLogo": "https://www.formula1.com/content/dam/fom-website/teams/2022/ferrari-logo.png.transform/2col/image.png",
     "drivers": [
-      "Carlos Sainz",
       "Charles Leclerc",
+      "Carlos Sainz",
     ],
     "name": "Ferrari",
-    "points": 469,
+    "points": 554,
     "rank": 2,
   },
   {
@@ -32,7 +32,7 @@ exports[`current teams data 1`] = `
       "Lewis Hamilton",
     ],
     "name": "Mercedes",
-    "points": 416,
+    "points": 515,
     "rank": 3,
   },
   {
@@ -43,7 +43,7 @@ exports[`current teams data 1`] = `
       "Fernando Alonso",
     ],
     "name": "Alpine",
-    "points": 144,
+    "points": 173,
     "rank": 4,
   },
   {
@@ -54,29 +54,29 @@ exports[`current teams data 1`] = `
       "Daniel Ricciardo",
     ],
     "name": "McLaren",
-    "points": 138,
+    "points": 159,
     "rank": 5,
   },
   {
     "carImage": "https://www.formula1.com/content/dam/fom-website/teams/2022/alfa-romeo.png.transform/4col/image.png",
     "carLogo": "https://www.formula1.com/content/dam/fom-website/teams/2022/alfa-romeo-logo.png.transform/2col/image.png",
     "drivers": [
-      "Guanyu Zhou",
       "Valtteri Bottas",
+      "Guanyu Zhou",
     ],
     "name": "Alfa Romeo",
-    "points": 52,
+    "points": 55,
     "rank": 6,
   },
   {
     "carImage": "https://www.formula1.com/content/dam/fom-website/teams/2022/aston-martin.png.transform/4col/image.png",
     "carLogo": "https://www.formula1.com/content/dam/fom-website/teams/2022/aston-martin-logo.png.transform/2col/image.png",
     "drivers": [
-      "Sebastian Vettel",
       "Lance Stroll",
+      "Sebastian Vettel",
     ],
     "name": "Aston Martin",
-    "points": 51,
+    "points": 55,
     "rank": 7,
   },
   {
@@ -87,7 +87,7 @@ exports[`current teams data 1`] = `
       "Kevin Magnussen",
     ],
     "name": "Haas F1 Team",
-    "points": 38,
+    "points": 37,
     "rank": 8,
   },
   {
@@ -98,7 +98,7 @@ exports[`current teams data 1`] = `
       "Yuki Tsunoda",
     ],
     "name": "AlphaTauri",
-    "points": 36,
+    "points": 35,
     "rank": 9,
   },
   {

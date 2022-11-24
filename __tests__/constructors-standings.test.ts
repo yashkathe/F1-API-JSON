@@ -1,4 +1,4 @@
-import { getConstructorStandings } from "../src/scraper/constructors-standings";
+import { getConstructorStandings } from "../src/server";
 
 test("constrcutor standings", async () => {
     expect(await getConstructorStandings()).toMatchSnapshot();
