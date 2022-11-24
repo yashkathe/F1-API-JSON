@@ -9,6 +9,8 @@ interface dynamicLinks {
     driverStandings_2: string;
     constructorStandings_1: string;
     constructorStandings_2: string;
+    results_1: string;
+    results_2: string;
 }
 
 export const staticLinks: staticLinks = {
@@ -22,4 +24,6 @@ export const dynamicLinks: dynamicLinks = {
     driverStandings_2: "drivers.html",
     constructorStandings_1: "https://www.formula1.com/en/results.html",
     constructorStandings_2: "team.html",
+    results_1: "https://www.formula1.com/en/results.html",
+    results_2: "races.html",
 };

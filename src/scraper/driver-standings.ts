@@ -3,11 +3,11 @@ import cheerio from "cheerio";
 
 import { dynamicLinks } from "../endpoints/endpoints";
 
-import { driverStanding } from "../types/types";
+import { isDriverStanding } from "../types/types";
 
-export const getDriverStandings = (year: number = new Date().getFullYear()): Promise<driverStanding[]> => {
+export const getDriverStandings = (year: number = new Date().getFullYear()): Promise<isDriverStanding[]> => {
     try {
-        let driverStandings: driverStanding[] = [];
+        let driverStandings: isDriverStanding[] = [];
 
         return new Promise(async (resolve, reject) => {
             const response = await axios(`${dynamicLinks.driverStandings_1}/${year}/${dynamicLinks.driverStandings_2}`);
@@ -23,7 +23,7 @@ export const getDriverStandings = (year: number = new Date().getFullYear()): Pro
                 const points: number = parseInt($(this).find(" td:nth-child(6) ").text());
 
                 if (!Number.isNaN(position) && !Number.isNaN(points) && driver.length !== 0 && nationality.length !== 0 && team.length !== 0) {
-                    const driverStanding: driverStanding = {
+                    const driverStanding: isDriverStanding = {
                         position,
                         driver,
                         nationality,

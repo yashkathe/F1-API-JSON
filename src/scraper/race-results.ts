@@ -1,0 +1,41 @@
+import axios from "axios";
+import cheerio from "cheerio";
+
+import { dynamicLinks } from "../endpoints/endpoints";
+
+import { isRaceResult } from "../types/types";
+
+export const getRaceResults = (year: number): Promise<isRaceResult[]> => {
+    try {
+        let raceResults: isRaceResult[] = [];
+
+        return new Promise(async (resolve, reject) => {
+            const response = await axios(`${dynamicLinks.results_1}/${year}/${dynamicLinks.results_2}`);
+            const $ = cheerio.load(response.data);
+
+            $("tr").each(function () {
+                const grandPrix: string = $(this).find("td:nth-child(2) > a:nth-child(1)").text().trim();
+                const raceDate: string = $(this).find("td:nth-child(3)").text().trim();
+                const winner: string = $(this).find("td:nth-child(4) > span:nth-child(2)").text().trim();
+                const car: string = $(this).find("td:nth-child(5)").text().trim();
+                const laps: number = parseInt($(this).find("td:nth-child(6)").text().trim());
+                const time: string = $(this).find("td:nth-child(7)").text().trim();
+
+                if ((grandPrix.length !== 0 && raceDate.length !== 0 && winner.length !== 0, car.length !== 0, !Number.isNaN(laps), time.length !== 0)) {
+                    const raceResult: isRaceResult = {
+                        grandPrix,
+                        date: new Date(raceDate),
+                        winner,
+                        car,
+                        laps,
+                        time,
+                    };
+                    raceResults.push(raceResult);
+                }
+                resolve(raceResults);
+            });
+        });
+    } catch (error: any) {
+        throw new Error(error);
+    }
+};

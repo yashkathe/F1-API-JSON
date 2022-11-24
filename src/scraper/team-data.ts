@@ -3,11 +3,11 @@ import cheerio from "cheerio";
 
 import { staticLinks } from "../endpoints/endpoints";
 
-import { teams } from "../types/types";
+import { isTeam } from "../types/types";
 
-export const getTeamsData = (): Promise<teams[]> => {
+export const getTeamsData = (): Promise<isTeam[]> => {
     try {
-        let teams: teams[] = [];
+        let teams: isTeam[] = [];
 
         return new Promise(async (resolve, reject) => {
             const response = await axios(staticLinks.teams);
@@ -32,7 +32,7 @@ export const getTeamsData = (): Promise<teams[]> => {
                 const carImage: string | undefined = $(this).find("div:nth-child(1) > div:nth-child(4) > picture:nth-child(1) > img:nth-child(5)").attr("data-src");
 
                 if (name.length !== 0 && !Number.isNaN(points) && !Number.isNaN(rank)) {
-                    const team: teams = {
+                    const team: isTeam = {
                         name,
                         drivers,
                         points,

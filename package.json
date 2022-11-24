@@ -30,7 +30,7 @@
         "name": "Yash Kathe"
     },
     "license": "GPL-3.0",
-    "bugs":"https://github.com/yashkathe/F1-API/issues",
+    "bugs": "https://github.com/yashkathe/F1-API/issues",
     "devDependencies": {
         "@types/cheerio": "^0.22.31",
         "@types/jest": "^29.1.1",

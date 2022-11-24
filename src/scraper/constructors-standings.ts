@@ -3,11 +3,11 @@ import cheerio from "cheerio";
 
 import { dynamicLinks } from "../endpoints/endpoints";
 
-import { constructorStanding } from "../types/types";
+import { isConstructorStanding } from "../types/types";
 
-export const getConstructorStandings = async (year: number = new Date().getFullYear()): Promise<constructorStanding[]> => {
+export const getConstructorStandings = async (year: number = new Date().getFullYear()): Promise<isConstructorStanding[]> => {
     try {
-        let constructorStandings: constructorStanding[] = [];
+        let constructorStandings: isConstructorStanding[] = [];
 
         const response = await axios(`${dynamicLinks.constructorStandings_1}/${year}/${dynamicLinks.constructorStandings_2}`);
         const $ = cheerio.load(response.data);
@@ -18,7 +18,7 @@ export const getConstructorStandings = async (year: number = new Date().getFullY
             const points: number = parseInt($(this).find("td:nth-child(4)").text().trim());
 
             if (!Number.isNaN(position) && team.length !== 0 && !Number.isNaN(points)) {
-                const constructorStanding: constructorStanding = {
+                const constructorStanding: isConstructorStanding = {
                     position,
                     team,
                     points,

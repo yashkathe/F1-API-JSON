@@ -3,11 +3,11 @@ import cheerio from "cheerio";
 
 import { staticLinks } from "../endpoints/endpoints";
 
-import { drivers } from "../types/types";
+import { isDriver } from "../types/types";
 
-export const getDriverData = (): Promise<drivers[]> => {
+export const getDriverData = (): Promise<isDriver[]> => {
     try {
-        let drivers: drivers[] = [];
+        let drivers: isDriver[] = [];
 
         return new Promise(async (resolve, reject) => {
             const response = await axios(staticLinks.drivers);
@@ -25,7 +25,7 @@ export const getDriverData = (): Promise<drivers[]> => {
                 const driverImage: string | undefined = $(this).find(" div:nth-child(4) > picture:nth-child(1) > img:nth-child(2)").attr("data-src");
 
                 if (firstName.length !== 0 && secondName.length !== 0 && team.length !== 0 && !Number.isNaN(rank) && !Number.isNaN(points)) {
-                    const driver: drivers = {
+                    const driver: isDriver = {
                         name: firstName.concat(" ", secondName),
                         team,
                         rank,

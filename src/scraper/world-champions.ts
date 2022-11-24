@@ -3,9 +3,9 @@ import cheerio from "cheerio";
 
 import { staticLinks } from "../endpoints/endpoints";
 
-import { hallOfFame } from "../types/types";
+import { isHallOfFame } from "../types/types";
 
-export const getWorldChampions = (): Promise<hallOfFame[]> => {
+export const getWorldChampions = (): Promise<isHallOfFame[]> => {
     try {
         let worldChampions: any = [];
 
@@ -31,7 +31,7 @@ export const getWorldChampions = (): Promise<hallOfFame[]> => {
                     });
 
                 if (name.length !== 0 && years.length !== 0) {
-                    const worldChampion: hallOfFame = {
+                    const worldChampion: isHallOfFame = {
                         name,
                         years,
                     };

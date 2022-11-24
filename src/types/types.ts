@@ -1,10 +1,10 @@
-export type constructorStanding = {
+export type isConstructorStanding = {
     position: number;
     team: string;
     points: number;
 };
 
-export type drivers = {
+export type isDriver = {
     name: string;
     team: string;
     rank: number;
@@ -13,7 +13,7 @@ export type drivers = {
     driverImage: string | undefined;
 };
 
-export type driverStanding = {
+export type isDriverStanding = {
     position: number;
     driver: string;
     nationality: string;
@@ -21,7 +21,7 @@ export type driverStanding = {
     points: number;
 };
 
-export type teams = {
+export type isTeam = {
     name: string;
     drivers: string[];
     points: number;
@@ -30,7 +30,16 @@ export type teams = {
     carImage: string | undefined;
 };
 
-export type hallOfFame = {
+export type isHallOfFame = {
     name: string;
     years: number[];
+};
+
+export type isRaceResult = {
+    grandPrix: string;
+    date: Date;
+    winner: string;
+    car: string;
+    laps: number;
+    time: string;
 };
