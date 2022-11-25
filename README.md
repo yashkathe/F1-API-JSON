@@ -33,7 +33,7 @@ npm i f1-api-node
   Fetch all the world champions  
   _No arguments_
 
-- **getRaceResults**
+- **getRaceResults**  
   Fetch race results for all the grand prix in a given year.  
   The function takes one argument: The year from which you want to extract race results.  
 

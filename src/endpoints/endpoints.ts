@@ -11,6 +11,8 @@ interface dynamicLinks {
     constructorStandings_2: string;
     results_1: string;
     results_2: string;
+    fastestLap_1: string;
+    fastestLap_2: string;
 }
 
 export const staticLinks: staticLinks = {
@@ -26,4 +28,6 @@ export const dynamicLinks: dynamicLinks = {
     constructorStandings_2: "team.html",
     results_1: "https://www.formula1.com/en/results.html",
     results_2: "races.html",
+    fastestLap_1: "https://www.formula1.com/en/results.html",
+    fastestLap_2: "fastest-laps.html",
 };
