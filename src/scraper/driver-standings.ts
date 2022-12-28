@@ -9,7 +9,7 @@ export const getDriverStandings = async (year: number = new Date().getFullYear()
     try {
         let driverStandings: isDriverStanding[] = [];
 
-        const response = await axios(`${dynamicLinks.driverStandings_1}/${year}/${dynamicLinks.driverStandings_2}`);
+        const response = await axios(`${dynamicLinks.rootLink}/${year}/${dynamicLinks.driverStandings}`);
         const $ = cheerio.load(response.data);
 
         $("tr").each(function () {

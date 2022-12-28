@@ -9,7 +9,7 @@ export const getConstructorStandings = async (year: number = new Date().getFullY
     try {
         let constructorStandings: isConstructorStanding[] = [];
 
-        const response = await axios(`${dynamicLinks.constructorStandings_1}/${year}/${dynamicLinks.constructorStandings_2}`);
+        const response = await axios(`${dynamicLinks.rootLink}/${year}/${dynamicLinks.constructorStandings}`);
         const $ = cheerio.load(response.data);
 
         $("tr").each(function () {

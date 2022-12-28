@@ -9,7 +9,7 @@ export const getRaceResults = async (year: number): Promise<isRaceResult[]> => {
     try {
         let raceResults: isRaceResult[] = [];
 
-        const response = await axios(`${dynamicLinks.results_1}/${year}/${dynamicLinks.results_2}`);
+        const response = await axios(`${dynamicLinks.rootLink}/${year}/${dynamicLinks.results}`);
         const $ = cheerio.load(response.data);
 
         $("tr").each(function () {
