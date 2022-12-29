@@ -5,7 +5,7 @@ import { staticLinks } from "../endpoints/endpoints";
 
 import { isTeam } from "../types/types";
 
-export const getTeamLineups = async (): Promise<isTeam[]> => {
+export const getTeamLineup = async (): Promise<isTeam[]> => {
     try {
         let teams: isTeam[] = [];
 

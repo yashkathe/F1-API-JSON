@@ -1,5 +1,5 @@
-import { getDriverLineups } from "../src/server";
+import { getDriverLineup } from "../src/server";
 
 test("current driver lineup", async () => {
-    expect(await getDriverLineups()).toMatchSnapshot();
+    expect(await getDriverLineup()).toMatchSnapshot();
 });

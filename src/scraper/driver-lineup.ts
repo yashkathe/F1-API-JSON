@@ -5,7 +5,7 @@ import { staticLinks } from "../endpoints/endpoints";
 
 import { isDriver } from "../types/types";
 
-export const getDriverLineups = async (): Promise<isDriver[]> => {
+export const getDriverLineup = async (): Promise<isDriver[]> => {
     try {
         let drivers: isDriver[] = [];
 
