@@ -32,6 +32,9 @@ export const getRaceResults = async (year: number): Promise<isRaceResult[]> => {
                 raceResults.push(raceResult);
             }
         });
+        if (raceResults.length === 0) {
+            throw new Error(" No data found");
+        }
         return raceResults;
     } catch (error: any) {
         throw new Error(error);

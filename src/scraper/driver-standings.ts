@@ -32,6 +32,9 @@ export const getDriverStandings = async (year: number = new Date().getFullYear()
                 driverStandings.push(driverStanding);
             }
         });
+        if (driverStandings.length === 0) {
+            throw new Error(" No data found");
+        }
         return driverStandings;
     } catch (error: any) {
         throw new Error(error);

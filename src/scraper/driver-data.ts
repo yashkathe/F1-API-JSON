@@ -35,6 +35,9 @@ export const getDriverData = async (): Promise<isDriver[]> => {
                 drivers.push(driver);
             }
         });
+        if (drivers.length === 0) {
+            throw new Error(" No data found");
+        }
         return drivers;
     } catch (error: any) {
         throw new Error(error);

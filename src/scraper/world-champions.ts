@@ -37,6 +37,9 @@ export const getWorldChampions = async (): Promise<isHallOfFame[]> => {
                 worldChampions.push(worldChampion);
             }
         });
+        if (worldChampions.length === 0) {
+            throw new Error(" No data found");
+        }
         return worldChampions;
     } catch (error: any) {
         throw new Error(error);

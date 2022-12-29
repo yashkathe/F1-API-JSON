@@ -26,6 +26,9 @@ export const getConstructorStandings = async (year: number = new Date().getFullY
                 constructorStandings.push(constructorStanding);
             }
         });
+        if (constructorStandings.length === 0) {
+            throw new Error(" No data found");
+        }
         return constructorStandings;
     } catch (error: any) {
         throw new Error(error);

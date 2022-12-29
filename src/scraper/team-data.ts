@@ -40,6 +40,9 @@ export const getTeamsData = async (): Promise<isTeam[]> => {
                 teams.push(team);
             }
         });
+        if (teams.length === 0) {
+            throw new Error(" No data found");
+        }
         return teams;
     } catch (error: any) {
         throw new Error(error);
