@@ -1,5 +1,5 @@
-import { getTeamsData } from "../src/server";
+import { getTeamLineups } from "../src/server";
 
 test("current teams data", async () => {
-    expect(await getTeamsData()).toMatchSnapshot();
+    expect(await getTeamLineups()).toMatchSnapshot();
 });

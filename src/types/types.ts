@@ -7,8 +7,7 @@ export type isConstructorStanding = {
 export type isDriver = {
     name: string;
     team: string;
-    rank: number;
-    points: number;
+    rank: string | undefined;
     nationalityImage: string | undefined;
     driverImage: string | undefined;
 };
@@ -24,8 +23,6 @@ export type isDriverStanding = {
 export type isTeam = {
     name: string;
     drivers: string[];
-    points: number;
-    rank: number;
     carLogo: string | undefined;
     carImage: string | undefined;
 };
