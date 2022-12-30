@@ -25,43 +25,49 @@ myFunction()
 
 # Functions
 
-### **1. getConstructorStandings**  
+#### **1. getConstructorStandings**  
   
 | Description | Needs Paramter ? | Paramter Description | Default Argument |
 |:------------|------------------|----------------------|------------------|
 | Fetch Constructors standings from points table | Yes - 1 | The year from which you want to extract points table for (1950 - current) | current year |
 
  
-### **2. getDriverStandings**   
+#### **2. getDriverStandings**   
 
 | Description | Needs Paramter ? | Paramter Description | Default Argument |
 |:------------|------------------|----------------------|------------------|
 | Fetch F1 driver standings from points table | Yes - 1 |  The year from which you want to extract points table for (1950 - current) | current year |
 
 
-### **3. getDriverLineup**  
+#### **3. getDriverLineup**  
 
 | Description | Needs Paramter ? | Paramter Description | Default Argument |
 |:------------|------------------|----------------------|------------------|
 | Fetch the current lineup of F1 drivers | No |  - | - |
    
 
-### **4. getTeamLineup**  
+#### **4. getTeamLineup**  
 | Description | Needs Paramter ? | Paramter Description | Default Argument |
 |:------------|------------------|----------------------|------------------|
 | Fetch the current list of F1 teams | No |  - | - |
 
   
-### **5. getWorldChampions**  
+#### **5. getWorldChampions**  
 | Description | Needs Paramter ? | Paramter Description | Default Argument |
 |:------------|------------------|----------------------|------------------|
 |   Fetch all the world champions   | No |  - | - |
 
 
-### **6. getRaceResults**  
+#### **6. getRaceResults**  
 | Description | Needs Paramter ? | Paramter Description | Default Argument |
 |:------------|------------------|----------------------|------------------|
 |   Fetch race results of all the grand prix in a given year   | Yes - 1  | The year from which you want to extract race results (1950 - current) | - |
+
+#### **7. getRaceSchedule**  
+  
+| Description | Needs Paramter ? | Paramter Description | Default Argument |
+|:------------|------------------|----------------------|------------------|
+| Fetch race schedule for an entire year | Yes - 1 | The year from which you want to extract race schedule | current year |
 
 
 # Snapshots

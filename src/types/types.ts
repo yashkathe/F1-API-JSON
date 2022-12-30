@@ -40,3 +40,11 @@ export type isRaceResult = {
     laps: number;
     time: string;
 };
+
+export type isRaceSchedule = {
+    round: string;
+    date: string;
+    raceCountry: string;
+    eventTitle: string;
+    trackMap: string;
+};
