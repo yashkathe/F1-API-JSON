@@ -34,7 +34,7 @@ export const getDriverLineup = async (): Promise<isDriver[]> => {
             }
         });
         if (drivers.length === 0) {
-            throw new Error(" No data found");
+            throw new Error("No data found");
         }
         return drivers;
     } catch (error: any) {

@@ -5,7 +5,7 @@ import { dynamicLinks } from "../endpoints/endpoints";
 
 import { isRaceResult } from "../types/types";
 
-export const getRaceResults = async (year: number): Promise<isRaceResult[]> => {
+export const getRaceResults = async (year: number = new Date().getFullYear()): Promise<isRaceResult[]> => {
     try {
         let raceResults: isRaceResult[] = [];
 

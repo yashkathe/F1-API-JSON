@@ -4,7 +4,7 @@ exports[`get race results 1`] = `
 [
   {
     "car": "Ferrari",
-    "date": 2000-03-11T18:30:00.000Z,
+    "date": 2000-03-12T08:00:00.000Z,
     "grandPrix": "Australia",
     "laps": 58,
     "time": "1:34:01.987",
@@ -12,7 +12,7 @@ exports[`get race results 1`] = `
   },
   {
     "car": "Ferrari",
-    "date": 2000-03-25T18:30:00.000Z,
+    "date": 2000-03-26T08:00:00.000Z,
     "grandPrix": "Brazil",
     "laps": 71,
     "time": "1:31:35.271",
@@ -20,7 +20,7 @@ exports[`get race results 1`] = `
   },
   {
     "car": "Ferrari",
-    "date": 2000-04-08T18:30:00.000Z,
+    "date": 2000-04-09T07:00:00.000Z,
     "grandPrix": "San Marino",
     "laps": 62,
     "time": "1:31:39.776",
@@ -28,7 +28,7 @@ exports[`get race results 1`] = `
   },
   {
     "car": "McLaren Mercedes",
-    "date": 2000-04-22T18:30:00.000Z,
+    "date": 2000-04-23T07:00:00.000Z,
     "grandPrix": "Great Britain",
     "laps": 60,
     "time": "1:28:50.108",
@@ -36,7 +36,7 @@ exports[`get race results 1`] = `
   },
   {
     "car": "McLaren Mercedes",
-    "date": 2000-05-06T18:30:00.000Z,
+    "date": 2000-05-07T07:00:00.000Z,
     "grandPrix": "Spain",
     "laps": 65,
     "time": "1:33:55.390",
@@ -44,7 +44,7 @@ exports[`get race results 1`] = `
   },
   {
     "car": "Ferrari",
-    "date": 2000-05-20T18:30:00.000Z,
+    "date": 2000-05-21T07:00:00.000Z,
     "grandPrix": "Europe",
     "laps": 67,
     "time": "1:42:00.307",
@@ -52,7 +52,7 @@ exports[`get race results 1`] = `
   },
   {
     "car": "McLaren Mercedes",
-    "date": 2000-06-03T18:30:00.000Z,
+    "date": 2000-06-04T07:00:00.000Z,
     "grandPrix": "Monaco",
     "laps": 78,
     "time": "1:49:28.213",
@@ -60,7 +60,7 @@ exports[`get race results 1`] = `
   },
   {
     "car": "Ferrari",
-    "date": 2000-06-17T18:30:00.000Z,
+    "date": 2000-06-18T07:00:00.000Z,
     "grandPrix": "Canada",
     "laps": 69,
     "time": "1:41:12.313",
@@ -68,7 +68,7 @@ exports[`get race results 1`] = `
   },
   {
     "car": "McLaren Mercedes",
-    "date": 2000-07-01T18:30:00.000Z,
+    "date": 2000-07-02T07:00:00.000Z,
     "grandPrix": "France",
     "laps": 72,
     "time": "1:38:05.538",
@@ -76,7 +76,7 @@ exports[`get race results 1`] = `
   },
   {
     "car": "McLaren Mercedes",
-    "date": 2000-07-15T18:30:00.000Z,
+    "date": 2000-07-16T07:00:00.000Z,
     "grandPrix": "Austria",
     "laps": 71,
     "time": "1:28:15.818",
@@ -84,7 +84,7 @@ exports[`get race results 1`] = `
   },
   {
     "car": "Ferrari",
-    "date": 2000-07-29T18:30:00.000Z,
+    "date": 2000-07-30T07:00:00.000Z,
     "grandPrix": "Germany",
     "laps": 45,
     "time": "1:25:34.418",
@@ -92,7 +92,7 @@ exports[`get race results 1`] = `
   },
   {
     "car": "McLaren Mercedes",
-    "date": 2000-08-12T18:30:00.000Z,
+    "date": 2000-08-13T07:00:00.000Z,
     "grandPrix": "Hungary",
     "laps": 77,
     "time": "1:45:33.869",
@@ -100,7 +100,7 @@ exports[`get race results 1`] = `
   },
   {
     "car": "McLaren Mercedes",
-    "date": 2000-08-26T18:30:00.000Z,
+    "date": 2000-08-27T07:00:00.000Z,
     "grandPrix": "Belgium",
     "laps": 44,
     "time": "1:28:14.494",
@@ -108,7 +108,7 @@ exports[`get race results 1`] = `
   },
   {
     "car": "Ferrari",
-    "date": 2000-09-09T18:30:00.000Z,
+    "date": 2000-09-10T07:00:00.000Z,
     "grandPrix": "Italy",
     "laps": 53,
     "time": "1:27:31.638",
@@ -116,7 +116,7 @@ exports[`get race results 1`] = `
   },
   {
     "car": "Ferrari",
-    "date": 2000-09-23T18:30:00.000Z,
+    "date": 2000-09-24T07:00:00.000Z,
     "grandPrix": "United States",
     "laps": 73,
     "time": "1:36:30.883",
@@ -124,7 +124,7 @@ exports[`get race results 1`] = `
   },
   {
     "car": "Ferrari",
-    "date": 2000-10-07T18:30:00.000Z,
+    "date": 2000-10-08T07:00:00.000Z,
     "grandPrix": "Japan",
     "laps": 53,
     "time": "1:29:53.435",
@@ -132,7 +132,7 @@ exports[`get race results 1`] = `
   },
   {
     "car": "Ferrari",
-    "date": 2000-10-21T18:30:00.000Z,
+    "date": 2000-10-22T07:00:00.000Z,
     "grandPrix": "Malaysia",
     "laps": 56,
     "time": "1:35:54.235",
