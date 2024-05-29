@@ -9,7 +9,7 @@
         "README.md"
     ],
     "scripts": {
-        "start": "nodemon './dist/server.js'",
+        "start": "tsc -p . && nodemon './dist/server.js'",
         "start-api": "nodemon './dist/server-api.js'",
         "test": "jest",
         "build": "tsc -p ."

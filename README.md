@@ -4,35 +4,35 @@
 
 The scraper scrapes this website: <https://www.formula1.com>
 
-# Installation
+## Installation
 
 ```bash
 npm i f1-api-node
 ```
 
-# Accessing API through Docker
+## Accessing API through Docker
 
 The docker image of the rest api can be found on [Docker Hub](https://hub.docker.com/repository/docker/katheyash/f1-api-node/general)
 
-- ## Pull the Image and start the development in no time:  
+- ### Pull the Image and start the development in no time  
 
 ```bash
 docker push katheyash/f1-api-node:tagname
 ```
 
-- ## The default port is 80
+- ### The default port is 80
 
 ```bash
 docker run -p 80:80 --name f1-api-node-test-1 katheyash/f1-api-node:1
 ```
 
-- ## If .env file exists
+- ### If .env file exists
 
 ```bash
 docker run --env-file ./.env -p 3001:3001 --name f1-api-node-test-1 f1-api-node:1
 ```
 
-# Example snippet
+## Example snippet
   
 The following function will print the current lineup of F1 drivers.
 
@@ -47,59 +47,59 @@ const myFunction = async () => {
 myFunction()
 ```
 
-# Functions
+## Functions
 
-#### **1. getConstructorStandings**  
+### **1. getConstructorStandings**  
   
 | Description | Needs Paramter ? | Paramter Description | Default Argument |
 |:------------|------------------|----------------------|------------------|
 | Fetch Constructors standings from points table | Yes - 1 | The year from which you want to extract points table for (1950 - current) | current year |
 
-#### **2. getDriverStandings**
+### **2. getDriverStandings**
 
 | Description | Needs Paramter ? | Paramter Description | Default Argument |
 |:------------|------------------|----------------------|------------------|
 | Fetch F1 driver standings from points table | Yes - 1 |  The year from which you want to extract points table for (1950 - current) | current year |
 
-#### **3. getDriverLineup**  
+### **3. getDriverLineup**  
 
 | Description | Needs Paramter ? | Paramter Description | Default Argument |
 |:------------|------------------|----------------------|------------------|
 | Fetch the current lineup of F1 drivers | No |  - | - |
 
-#### **4. getTeamLineup**  
+### **4. getTeamLineup**  
 
 | Description | Needs Paramter ? | Paramter Description | Default Argument |
 |:------------|------------------|----------------------|------------------|
 | Fetch the current list of F1 teams | No |  - | - |
 
-#### **5. getWorldChampions**  
+### **5. getWorldChampions**  
 
 | Description | Needs Paramter ? | Paramter Description | Default Argument |
 |:------------|------------------|----------------------|------------------|
 |   Fetch all the world champions   | No |  - | - |
 
-#### **6. getRaceResults**  
+### **6. getRaceResults**  
 
 | Description | Needs Paramter ? | Paramter Description | Default Argument |
 |:------------|------------------|----------------------|------------------|
 |   Fetch race results of all the grand prix in a given year   | Yes - 1  | The year from which you want to extract race results (1950 - current) | - |
 
-#### **7. getRaceSchedule**  
+### **7. getRaceSchedule**  
   
 | Description | Needs Paramter ? | Paramter Description | Default Argument |
 |:------------|------------------|----------------------|------------------|
 | Fetch race schedule for an entire year | Yes - 1 | The year from which you want to extract race schedule | current year |
 
-# Snapshots
+## Snapshots
 
 If you want to have a look at the output from the given functions check [this](https://github.com/yashkathe/F1-API/tree/master/__tests__/__snapshots__).
 
-# Usage
+## Usage
 
 WARNING: Abusing this library may result in an IP ban from the host website.  
 Please use with caution and try to limit the rate and amount of your requests if you value your access to formula1.com
 
-# Report Problems
+## Report Problems
 
 If you have any problems regarding this project, read the following [disclaimer](https://github.com/yashkathe/F1-API/blob/master/DISCLAIMER.md).  

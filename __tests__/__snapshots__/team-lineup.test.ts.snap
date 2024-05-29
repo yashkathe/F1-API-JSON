@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`current teams data 1`] = `
+[
+  {
+    "carImage": "https://media.formula1.com/d_team_car_fallback_image.png/content/dam/fom-website/teams/2024/red-bull-racing.png",
+    "carLogo": "https://media.formula1.com/content/dam/fom-website/teams/2024/red-bull-racing-logo.png",
+    "drivers": [
+      "Max Verstappen",
+      "Sergio Perez",
+    ],
+    "name": "Red Bull Racing",
+  },
+]
+`;
