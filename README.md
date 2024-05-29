@@ -10,6 +10,28 @@ The scraper scrapes this website: <https://www.formula1.com>
 npm i f1-api-node
 ```
 
+# Accessing API through Docker
+
+The docker image of the rest api can be found on [Docker Hub](https://hub.docker.com/repository/docker/katheyash/f1-api-node/general)
+
+- ## Pull the Image and start the development in no time:  
+
+```bash
+docker push katheyash/f1-api-node:tagname
+```
+
+- ## The default port is 80
+
+```bash
+docker run -p 80:80 --name f1-api-node-test-1 katheyash/f1-api-node:1
+```
+
+- ## If .env file exists
+
+```bash
+docker run --env-file ./.env -p 3001:3001 --name f1-api-node-test-1 f1-api-node:1
+```
+
 # Example snippet
   
 The following function will print the current lineup of F1 drivers.
