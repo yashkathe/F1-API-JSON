@@ -16,8 +16,16 @@ The docker image of the rest api can be found on [Docker Hub](https://hub.docker
 
 - ### Pull the Image and start the development in no time  
 
+#### 1. Pull from Docker Hub
+
 ```bash
 docker push katheyash/f1-api-node:tagname
+```
+
+#### 2. Pull from Github Container Registry
+
+```bash
+docker pull ghcr.io/yashkathe/f1-api-node:2
 ```
 
 - ### The default port is 80
