@@ -99,6 +99,12 @@ myFunction()
 |:------------|------------------|----------------------|------------------|
 | Fetch race schedule for an entire year | Yes - 1 | The year from which you want to extract race schedule | current year |
 
+### **8. getFastestLaps**  
+  
+| Description | Needs Paramter ? | Paramter Description | Default Argument |
+|:------------|------------------|----------------------|------------------|
+| Fetch fastest laps for all races in a year | Yes - 1 | The year from which you want to extract fastest laps | current year |
+
 ## Snapshots
 
 If you want to have a look at the output from the given functions check [this](https://github.com/yashkathe/F1-API/tree/master/__tests__/__snapshots__).

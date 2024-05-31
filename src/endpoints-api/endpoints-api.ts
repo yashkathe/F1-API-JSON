@@ -5,6 +5,7 @@ import { getConstructorStandings } from "../scraper/constructors-standings";
 import { getWorldChampions } from "../scraper/world-champions";
 import { getRaceResults } from "../scraper/race-results";
 import { getRaceSchedule } from "../scraper/race-schedule";
+import { getFastestLaps } from "../scraper/fastest-laps";
 
 import { Request, Response } from "express";
 
@@ -71,6 +72,17 @@ export const raceSchedule = async (req: Request, res: Response) => {
         const { year } = req.params;
 
         const data = await getRaceSchedule(parseInt(year));
+        res.json(data);
+    } catch (err: any) {
+        res.status(500).json({ error: err.message.toString() });
+    }
+};
+
+export const fastestLaps = async (req: Request, res: Response) => {
+    try {
+        const { year } = req.params;
+
+        const data = await getFastestLaps(parseInt(year));
         res.json(data);
     } catch (err: any) {
         res.status(500).json({ error: err.message.toString() });
