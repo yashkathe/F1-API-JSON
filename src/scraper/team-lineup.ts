@@ -14,7 +14,6 @@ export const getTeamLineup = async (): Promise<isTeam[]> => {
 
         $("a.outline").each(function () {
             const name: string = $(this).find("div> div > h4:nth-child(1) > span:nth-child(1)").text();
-            console.log(name);
             const driver1_0: string = $(this).find("div:nth-child(5) > div:nth-child(1) > div:nth-child(1) > div > p:nth-child(1)").text();
             const driver1_1: string = $(this).find("div:nth-child(5) > div:nth-child(1) > div:nth-child(1) > div > p:nth-child(2)").text();
             const driver2_0: string = $(this).find("div:nth-child(5) > div:nth-child(2) > div:nth-child(1) > div > p:nth-child(1)").text();

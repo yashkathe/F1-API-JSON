@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`fastest laps 1`] = `
+[
+  {
+    "car": "Red Bull Racing Honda RBPT",
+    "driver": "Verstappen Max",
+    "grandPrix": "Bahrain",
+    "time": "1:32.608",
+  },
+  {
+    "car": "Ferrari",
+    "driver": "Leclerc Charles",
+    "grandPrix": "Saudi Arabia",
+    "time": "1:31.632",
+  },
+  {
+    "car": "Ferrari",
+    "driver": "Leclerc Charles",
+    "grandPrix": "Australia",
+    "time": "1:19.813",
+  },
+  {
+    "car": "Red Bull Racing Honda RBPT",
+    "driver": "Verstappen Max",
+    "grandPrix": "Japan",
+    "time": "1:33.706",
+  },
+  {
+    "car": "Aston Martin Aramco Mercedes",
+    "driver": "Alonso Fernando",
+    "grandPrix": "China",
+    "time": "1:37.810",
+  },
+  {
+    "car": "McLaren Mercedes",
+    "driver": "Piastri Oscar",
+    "grandPrix": "Miami",
+    "time": "1:30.634",
+  },
+  {
+    "car": "Mercedes",
+    "driver": "Russell George",
+    "grandPrix": "Emilia Romagna",
+    "time": "1:18.589",
+  },
+  {
+    "car": "Mercedes",
+    "driver": "Hamilton Lewis",
+    "grandPrix": "Monaco",
+    "time": "1:14.165",
+  },
+]
+`;

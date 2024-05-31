@@ -48,3 +48,10 @@ export type isRaceSchedule = {
     eventTitle: string;
     trackMap: string;
 };
+
+export type isFastestLap = {
+    grandPrix: string;
+    driver: string;
+    car: string;
+    time: string;
+};
