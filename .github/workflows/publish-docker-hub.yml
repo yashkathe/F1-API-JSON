@@ -15,9 +15,7 @@ jobs:
   
       - name: Extract version number
         id: extract_version
-        run: |
-          VERSION=$(git describe --tags --abbrev=0)
-          echo "RELEASE_VERSION=${VERSION}" >> $GITHUB_ENV
+        run: echo "RELEASE_VERSION=${GITHUB_REF#refs/tags/}" >> $GITHUB_ENV
   
       - name: Log in to Docker Hub
         uses: docker/login-action@v2
