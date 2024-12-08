@@ -4,6 +4,7 @@
     "description": "A simple library written in typescript to fetch Formula-1 data",
     "main": "dist/server.js",
     "types": "dist/server.d.ts",
+    "homepage": "https://yashkathe.github.io/F1-API-JSON",
     "files": [
         "dist",
         "README.md"
