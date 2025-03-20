@@ -14,8 +14,8 @@ app.use(helmet());
 
 app.use("/", router);
 
-app.listen(process.env.PORT, () => {
-    console.log(`server is running on ${process.env.PORT}`);
+app.listen(process.env.PORT || 4005, () => {
+    console.log(`server is running on ${process.env.PORT || 4005}`);
 }).on("error", (error) => {
     throw new Error(error.message);
 });
