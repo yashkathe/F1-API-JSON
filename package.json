@@ -1,6 +1,6 @@
 {
     "name": "f1-api-node",
-    "version": "1.6.0",
+    "version": "1.7.0",
     "description": "A simple library written in typescript to fetch Formula-1 data",
     "main": "dist/server.js",
     "types": "dist/server.d.ts",
