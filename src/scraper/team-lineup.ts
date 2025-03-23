@@ -12,22 +12,26 @@ export const getTeamLineup = async (): Promise<isTeam[]> => {
         const response = await axios(staticLinks.teams);
         const $ = cheerio.load(response.data);
 
-        $("a.outline").each(function () {
-            const name: string = $(this).find("div> div > h4:nth-child(1) > span:nth-child(1)").text();
-            const driver1_0: string = $(this).find("div:nth-child(5) > div:nth-child(1) > div:nth-child(1) > div > p:nth-child(1)").text();
-            const driver1_1: string = $(this).find("div:nth-child(5) > div:nth-child(1) > div:nth-child(1) > div > p:nth-child(2)").text();
-            const driver2_0: string = $(this).find("div:nth-child(5) > div:nth-child(2) > div:nth-child(1) > div > p:nth-child(1)").text();
-            const driver2_1: string = $(this).find("div:nth-child(5) > div:nth-child(2) > div:nth-child(1) > div > p:nth-child(2)").text();
+        $("a.group").each(function() {
+            console.log("entered");
+            const name: string = $(this).find("div > div:nth-child(3) > div:nth-child(1) > span:nth-child(1)").text();
+            const driver1_0: string = $(this).find("div > div:nth-child(5) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > p:nth-child(1)").text();
+            const driver1_1: string = $(this).find("div > div:nth-child(5) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > p:nth-child(2)").text();
+            const driver2_0: string = $(this).find("div > div:nth-child(5) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > p:nth-child(1)").text();
+            const driver2_1: string = $(this).find("div > div:nth-child(5) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > p:nth-child(2)").text();
             const driver1 = driver1_0.concat(" ", driver1_1);
             const driver2 = driver2_0.concat(" ", driver2_1);
             const drivers: string[] = [driver1, driver2];
 
-            const carLogo: string | undefined = $(this).find("div:nth-child(1) > div:nth-child(3) > img").attr("src");
-            const carImage: string | undefined = $(this).find("div:nth-child(1) > div:nth-child(6) > img").attr("src");
+            const carLogo: string | undefined = $(this).find("div > div:nth-child(3) > img:nth-child(2)").attr("src");
+            const carImage: string | undefined = $(this).find("div > div:nth-child(6) > img:nth-child(1)").attr("src");
+
+            const points: string | undefined = $(this).find("div> div:nth-child(1) > div:nth-child(2) > p:nth-child(1)").text();
 
             if (name.length !== 0) {
                 const team: isTeam = {
                     name,
+                    points: parseInt(points),
                     drivers,
                     carLogo,
                     carImage,

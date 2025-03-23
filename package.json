@@ -12,7 +12,7 @@
     "scripts": {
         "start": "tsc -p . && nodemon './dist/server.js'",
         "start-api": "nodemon './dist/server-api.js'",
-        "test": "jest",
+        "test": "rm -rf __tests__/__snapshots__/ && jest",
         "build": "tsc -p ."
     },
     "repository": {

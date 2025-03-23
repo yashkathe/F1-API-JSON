@@ -1,0 +1,106 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`current teams data 1`] = `
+[
+  {
+    "carImage": "https://media.formula1.com/d_team_car_fallback_image.png/content/dam/fom-website/teams/2025/mclaren.png",
+    "carLogo": "https://media.formula1.com/content/dam/fom-website/teams/2025/mclaren-logo.png",
+    "drivers": [
+      "Oscar Piastri",
+      "Lando Norris",
+    ],
+    "name": "McLaren",
+    "points": 78,
+  },
+  {
+    "carImage": "https://media.formula1.com/d_team_car_fallback_image.png/content/dam/fom-website/teams/2025/mercedes.png",
+    "carLogo": "https://media.formula1.com/content/dam/fom-website/teams/2025/mercedes-logo.png",
+    "drivers": [
+      "George Russell",
+      "Kimi Antonelli",
+    ],
+    "name": "Mercedes",
+    "points": 57,
+  },
+  {
+    "carImage": "https://media.formula1.com/d_team_car_fallback_image.png/content/dam/fom-website/teams/2025/red-bull-racing.png",
+    "carLogo": "https://media.formula1.com/content/dam/fom-website/teams/2025/red-bull-racing-logo.png",
+    "drivers": [
+      "Max Verstappen",
+      "Liam Lawson",
+    ],
+    "name": "Red Bull Racing",
+    "points": 36,
+  },
+  {
+    "carImage": "https://media.formula1.com/d_team_car_fallback_image.png/content/dam/fom-website/teams/2025/williams.png",
+    "carLogo": "https://media.formula1.com/content/dam/fom-website/teams/2025/williams-logo.png",
+    "drivers": [
+      "Alexander Albon",
+      "Carlos Sainz",
+    ],
+    "name": "Williams",
+    "points": 17,
+  },
+  {
+    "carImage": "https://media.formula1.com/d_team_car_fallback_image.png/content/dam/fom-website/teams/2025/ferrari.png",
+    "carLogo": "https://media.formula1.com/content/dam/fom-website/teams/2025/ferrari-logo.png",
+    "drivers": [
+      "Charles Leclerc",
+      "Lewis Hamilton",
+    ],
+    "name": "Ferrari",
+    "points": 17,
+  },
+  {
+    "carImage": "https://media.formula1.com/d_team_car_fallback_image.png/content/dam/fom-website/teams/2025/haas.png",
+    "carLogo": "https://media.formula1.com/content/dam/fom-website/teams/2025/haas-logo.png",
+    "drivers": [
+      "Esteban Ocon",
+      "Oliver Bearman",
+    ],
+    "name": "Haas",
+    "points": 14,
+  },
+  {
+    "carImage": "https://media.formula1.com/d_team_car_fallback_image.png/content/dam/fom-website/teams/2025/aston-martin.png",
+    "carLogo": "https://media.formula1.com/content/dam/fom-website/teams/2025/aston-martin-logo.png",
+    "drivers": [
+      "Lance Stroll",
+      "Fernando Alonso",
+    ],
+    "name": "Aston Martin",
+    "points": 10,
+  },
+  {
+    "carImage": "https://media.formula1.com/d_team_car_fallback_image.png/content/dam/fom-website/teams/2025/kick-sauber.png",
+    "carLogo": "https://media.formula1.com/content/dam/fom-website/teams/2025/kick-sauber-logo.png",
+    "drivers": [
+      "Nico Hulkenberg",
+      "Gabriel Bortoleto",
+    ],
+    "name": "Kick Sauber",
+    "points": 6,
+  },
+  {
+    "carImage": "https://media.formula1.com/d_team_car_fallback_image.png/content/dam/fom-website/teams/2025/racing-bulls.png",
+    "carLogo": "https://media.formula1.com/content/dam/fom-website/teams/2025/racing-bulls-logo.png",
+    "drivers": [
+      "Isack Hadjar",
+      "Yuki Tsunoda",
+    ],
+    "name": "Racing Bulls",
+    "points": 3,
+  },
+  {
+    "carImage": "https://media.formula1.com/d_team_car_fallback_image.png/content/dam/fom-website/teams/2025/alpine.png",
+    "carLogo": "https://media.formula1.com/content/dam/fom-website/teams/2025/alpine-logo.png",
+    "drivers": [
+      "Pierre Gasly",
+      "Jack Doohan",
+    ],
+    "name": "Alpine",
+    "points": 0,
+  },
+]
+`;
