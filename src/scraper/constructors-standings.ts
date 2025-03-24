@@ -11,11 +11,10 @@ export const getConstructorStandings = async (year: number = new Date().getFullY
 
         const response = await axios(`${dynamicLinks.rootLink}/${year}/${dynamicLinks.constructorStandings}`);
         const $ = cheerio.load(response.data);
-
-        $("tr").each(function () {
-            const position: number = parseInt($(this).find("td:nth-child(2)").text().trim());
-            const team: string = $(this).find("td:nth-child(3)").text().trim();
-            const points: number = parseInt($(this).find("td:nth-child(4)").text().trim());
+        $(".f1-table > tbody:nth-child(2) > tr").each(function () {
+            const position: number = parseInt($(this).find("td:nth-child(1) > p:nth-child(1)").text().trim());
+            const team: string = $(this).find("td:nth-child(2) > p:nth-child(1)").text().trim();
+            const points: number = parseInt($(this).find("td:nth-child(3) > p:nth-child(1)").text().trim());
 
             if (!Number.isNaN(position) && team.length !== 0 && !Number.isNaN(points)) {
                 const constructorStanding: isConstructorStanding = {
