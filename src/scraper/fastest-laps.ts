@@ -12,12 +12,12 @@ export const getFastestLaps = async (year: number = new Date().getFullYear()): P
         const response = await axios(`${dynamicLinks.rootLink}/${year}/${dynamicLinks.fastestLap}`);
         const $ = cheerio.load(response.data);
 
-        $("tr").each(function () {
-            const grandPrix: string = $(this).find("td.width30.dark").text().trim();
-            const driverFirstName: string = $(this).find("td.width25.dark.bold > span.hide-for-mobile").text().trim();
-            const driverLastName: string = $(this).find("td.width25.dark.bold > span.hide-for-tablet").text().trim();
-            const car: string = $(this).find("td.width25.semi-bold.uppercase").text().trim();
-            const time: string = $(this).find("td:nth-child(5)").text().trim();
+        $(".f1-table > tbody:nth-child(2)").each(function () {
+            const grandPrix: string = $(this).find("td:nth-child(1) > p:nth-child(1)").text().trim();
+            const driverFirstName: string = $(this).find("td:nth-child(2) > p:nth-child(1) > span:nth-child(1)").text().trim();
+            const driverLastName: string = $(this).find("td:nth-child(2) > p:nth-child(1) > span:nth-child(2)").text().trim();
+            const car: string = $(this).find("td:nth-child(3) > p:nth-child(1)").text().trim();
+            const time: string = $(this).find("td:nth-child(4) > p:nth-child(1)").text().trim();
 
             const driver: string = driverFirstName.concat(" ", driverLastName);
 

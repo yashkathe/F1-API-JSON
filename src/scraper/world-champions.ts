@@ -12,27 +12,15 @@ export const getWorldChampions = async (): Promise<isHallOfFame[]> => {
         const response = await axios(staticLinks.hallOfFame);
         const $ = cheerio.load(response.data);
 
-        $("article").each(function () {
-            const years: number[] = [];
+        $("div.grid:nth-child(2) > a").each(function () {
 
-            const name: string = $(this).find("section > h4").text().trim().split("-")[0];
-            $(this)
-                .find("section > h4")
-                .text()
-                .trim()
-                .split("-")[1]
-                .split(",")
-                .forEach((x) => {
-                    if (x) {
-                        const year: number = parseInt(x);
-                        years.push(year);
-                    }
-                });
+            const name: string = $(this).find("figure:nth-child(1) > figcaption:nth-child(2) > p:nth-child(1)").text().trim();
+            const driver_image: string | undefined = $(this).find("figure:nth-child(1) > picture:nth-child(1) > img:nth-child(1)").attr("src")
 
-            if (name.length !== 0 && years.length !== 0) {
+            if (name.length !== 0 && driver_image?.length !== 0) {
                 const worldChampion: isHallOfFame = {
                     name,
-                    years,
+                    driver_image,
                 };
                 worldChampions.push(worldChampion);
             }

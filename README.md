@@ -4,6 +4,8 @@
 
 The scraper scrapes this website: <https://www.formula1.com>
 
+**Completely Updated According to the F1 New Website Changes ~ 2025!**
+
 ## Installation
 
 ```bash

@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`fastest laps 1`] = `
+[
+  {
+    "car": "McLaren MercedesMcLaren Mercedes",
+    "driver": "LandoLando NorrisNorris",
+    "grandPrix": "AustraliaChina",
+    "time": "1:22.1671:35.454",
+  },
+]
+`;

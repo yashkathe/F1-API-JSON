@@ -30,7 +30,7 @@ export type isTeam = {
 
 export type isHallOfFame = {
     name: string;
-    years: number[];
+    driver_image: string | undefined;
 };
 
 export type isRaceResult = {

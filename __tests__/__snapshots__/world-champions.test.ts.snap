@@ -1,0 +1,142 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`hall of fame 1`] = `
+[
+  {
+    "driver_image": "https://media.formula1.com/image/upload/f_auto,c_limit,q_auto,w_1320,t_16by9Centre/fom-website/manual/Hall of Fame 2024/GettyImages-856948472",
+    "name": "Nino Farina",
+  },
+  {
+    "driver_image": "https://media.formula1.com/image/upload/f_auto,c_limit,q_auto,w_1320,t_16by9North/fom-website/manual/Hall of Fame 2024/GettyImages-827612408",
+    "name": "Juan Manuel Fangio",
+  },
+  {
+    "driver_image": "https://media.formula1.com/image/upload/f_auto,c_limit,q_auto,w_1320,t_16by9South/fom-website/manual/Hall of Fame 2024/GettyImages-106501211",
+    "name": "Alberto Ascari",
+  },
+  {
+    "driver_image": "https://media.formula1.com/image/upload/f_auto,c_limit,q_auto,w_1320,t_16by9North/fom-website/manual/Hall of Fame 2024/GettyImages-1068321752",
+    "name": "Mike Hawthorn",
+  },
+  {
+    "driver_image": "https://media.formula1.com/image/upload/f_auto,c_limit,q_auto,w_1320,t_16by9North/fom-website/manual/Hall of Fame 2024/GettyImages-3323162",
+    "name": "Jack Brabham",
+  },
+  {
+    "driver_image": "https://media.formula1.com/image/upload/f_auto,c_limit,q_auto,w_1320,t_16by9North/fom-website/manual/Hall of Fame 2024/GettyImages-71183243",
+    "name": "Phil Hill",
+  },
+  {
+    "driver_image": "https://media.formula1.com/image/upload/f_auto,c_limit,q_auto,w_1320,t_16by9Centre/fom-website/manual/Hall of Fame 2024/GettyImages-864209082",
+    "name": "Graham Hill",
+  },
+  {
+    "driver_image": "https://media.formula1.com/image/upload/f_auto,c_limit,q_auto,w_1320,t_16by9Centre/fom-website/manual/Hall of Fame 2024/GettyImages-1328924500",
+    "name": "Jim Clark",
+  },
+  {
+    "driver_image": "https://media.formula1.com/image/upload/f_auto,c_limit,q_auto,w_1320,t_16by9Centre/fom-website/manual/Hall of Fame 2024/GettyImages-3072443",
+    "name": "John Surtees",
+  },
+  {
+    "driver_image": "https://media.formula1.com/image/upload/f_auto,c_limit,q_auto,w_1320,t_16by9South/fom-website/manual/Hall of Fame 2024/GettyImages-1063718326",
+    "name": "Denny Hulme",
+  },
+  {
+    "driver_image": "https://media.formula1.com/image/upload/f_auto,c_limit,q_auto,w_1320,t_16by9South/fom-website/manual/Hall of Fame 2024/GettyImages-1443308803",
+    "name": "Jackie Stewart",
+  },
+  {
+    "driver_image": "https://media.formula1.com/image/upload/f_auto,c_limit,q_auto,w_1320,t_16by9South/fom-website/manual/Hall of Fame 2024/GettyImages-831631668",
+    "name": "Jochen Rindt",
+  },
+  {
+    "driver_image": "https://media.formula1.com/image/upload/f_auto,c_limit,q_auto,w_1320,t_16by9South/fom-website/manual/Hall of Fame 2024/GettyImages-1189103543",
+    "name": "Emerson Fittipaldi",
+  },
+  {
+    "driver_image": "https://media.formula1.com/image/upload/f_auto,c_limit,q_auto,w_1320,t_16by9Centre/fom-website/manual/Hall of Fame 2024/GettyImages-525577811",
+    "name": "Niki Lauda",
+  },
+  {
+    "driver_image": "https://media.formula1.com/image/upload/f_auto,c_limit,q_auto,w_1320,t_16by9South/fom-website/manual/Hall of Fame 2024/GettyImages-827647160",
+    "name": "James Hunt",
+  },
+  {
+    "driver_image": "https://media.formula1.com/image/upload/f_auto,c_limit,q_auto,w_1320,t_16by9Centre/fom-website/manual/Hall of Fame 2024/GettyImages-851859388",
+    "name": "Mario Andretti",
+  },
+  {
+    "driver_image": "https://media.formula1.com/image/upload/f_auto,c_limit,q_auto,w_1320,t_16by9Centre/fom-website/manual/Hall of Fame 2024/GettyImages-79750356",
+    "name": "Jody Scheckter",
+  },
+  {
+    "driver_image": "https://media.formula1.com/image/upload/f_auto,c_limit,q_auto,w_1320,t_16by9South/fom-website/manual/Hall of Fame 2024/GettyImages-868507192",
+    "name": "Alan Jones",
+  },
+  {
+    "driver_image": "https://media.formula1.com/image/upload/f_auto,c_limit,q_auto,w_1320,t_16by9Centre/fom-website/manual/Hall of Fame 2024/GettyImages-1066217104",
+    "name": "Nelson Piquet",
+  },
+  {
+    "driver_image": "https://media.formula1.com/image/upload/f_auto,c_limit,q_auto,w_1320,t_16by9South/fom-website/manual/Hall of Fame 2024/GettyImages-464497739",
+    "name": "Keke Rosberg",
+  },
+  {
+    "driver_image": "https://media.formula1.com/image/upload/f_auto,c_limit,q_auto,w_1320,t_16by9Centre/fom-website/manual/Hall of Fame 2024/GettyImages-537112453",
+    "name": "Alain Prost",
+  },
+  {
+    "driver_image": "https://media.formula1.com/image/upload/f_auto,c_limit,q_auto,w_1320,t_16by9Centre/fom-website/manual/Hall of Fame 2024/GettyImages-659224375",
+    "name": "Ayrton Senna",
+  },
+  {
+    "driver_image": "https://media.formula1.com/image/upload/f_auto,c_limit,q_auto,w_1320,t_16by9Centre/fom-website/manual/Hall of Fame 2024/GettyImages-865701928",
+    "name": "Nigel Mansell",
+  },
+  {
+    "driver_image": "https://media.formula1.com/image/upload/f_auto,c_limit,q_auto,w_1320,t_16by9Centre/fom-website/manual/Hall of Fame 2024/GettyImages-72220757",
+    "name": "Michael Schumacher",
+  },
+  {
+    "driver_image": "https://media.formula1.com/image/upload/f_auto,c_limit,q_auto,w_1320,t_16by9Centre/fom-website/manual/Hall of Fame 2024/GettyImages-868558648",
+    "name": "Damon Hill",
+  },
+  {
+    "driver_image": "https://media.formula1.com/image/upload/f_auto,c_limit,q_auto,w_1320,t_16by9Centre/fom-website/manual/Hall of Fame 2024/GettyImages-52918273",
+    "name": "Jacques Villeneuve",
+  },
+  {
+    "driver_image": "https://media.formula1.com/image/upload/f_auto,c_limit,q_auto,w_1320,t_16by9South/fom-website/manual/Hall of Fame 2024/GettyImages-647968497",
+    "name": "Mika Hakkinen",
+  },
+  {
+    "driver_image": "https://media.formula1.com/image/upload/f_auto,c_limit,q_auto,w_1320,t_16by9Centre/fom-website/manual/Hall of Fame 2024/GettyImages-55768339",
+    "name": "Fernando Alonso",
+  },
+  {
+    "driver_image": "https://media.formula1.com/image/upload/f_auto,c_limit,q_auto,w_1320,t_16by9South/fom-website/manual/Hall of Fame 2024/GettyImages-2071874459",
+    "name": "Kimi Raikkonen",
+  },
+  {
+    "driver_image": "https://media.formula1.com/image/upload/f_auto,c_limit,q_auto,w_1320,t_16by9Centre/fom-website/manual/Hall of Fame 2024/GettyImages-1285771774",
+    "name": "Lewis Hamilton",
+  },
+  {
+    "driver_image": "https://media.formula1.com/image/upload/f_auto,c_limit,q_auto,w_1320,t_16by9Centre/fom-website/manual/Hall of Fame 2024/GettyImages-91979303",
+    "name": "Jenson Button",
+  },
+  {
+    "driver_image": "https://media.formula1.com/image/upload/f_auto,c_limit,q_auto,w_1320,t_16by9Centre/fom-website/manual/Hall of Fame 2024/GettyImages-82801122",
+    "name": "Sebastian Vettel",
+  },
+  {
+    "driver_image": "https://media.formula1.com/image/upload/f_auto,c_limit,q_auto,w_1320,t_16by9North/fom-website/manual/Hall of Fame 2024/GettyImages-607523452",
+    "name": "Nico Rosberg",
+  },
+  {
+    "driver_image": "https://media.formula1.com/image/upload/f_auto,c_limit,q_auto,w_1320/content/dam/fom-website/sutton/2021/AbuDhabi/Sunday/1358623736",
+    "name": "Max Verstappen",
+  },
+]
+`;
