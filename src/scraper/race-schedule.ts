@@ -12,34 +12,30 @@ export const getRaceSchedule = async (year: number = new Date().getFullYear()): 
         const response = await axios(`${dynamicLinks.raceSchedule}/${year}.html`);
         const $ = cheerio.load(response.data);
 
-        $("fieldset").each(function () {
-            const round: string = $(this).find("legend:nth-child(1)").text().trim();
+        $("div.f1-container:nth-child(3)").each(function() {
+            const round: string = $(this).find("a.outline-offset-4 > fieldset:nth-child(1) > legend:nth-child(1) > p:nth-child(1)").text().trim();
             const dateDays: string = $(this)
-                .find("div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > p:nth-child(1)")
+                .find("a.outline-offset-4 > fieldset:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > p:nth-child(1) > span:nth-child(1)")
                 .text()
                 .trim();
             const dateMonth: string = $(this)
-                .find("div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > span:nth-child(2)")
+                .find("a.outline-offset-4 > fieldset:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > p:nth-child(1) > span:nth-child(1)")
                 .text();
             const raceCountry: string = $(this)
-                .find("div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1)")
+                .find("a.outline-offset-4 > fieldset:nth-child(1) > div:nth-child(2) > div:nth-child(3) > div:nth-child(1) > p:nth-child(1)")
                 .text()
                 .trim();
             const eventTitle: string = $(this)
-                .find("div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2)")
+                .find("a.outline-offset-4 > fieldset:nth-child(1) > div:nth-child(2) > div:nth-child(3) > div:nth-child(2) > p:nth-child(1)")
                 .text()
                 .trim();
-            const trackMap: string | undefined = $(this)
-                .find("div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > picture:nth-child(1) > img:nth-child(2)")
-                .attr("data-src");
 
-            if (round !== undefined && raceCountry !== undefined && eventTitle !== undefined && trackMap !== undefined) {
+            if (round !== undefined && raceCountry !== undefined && eventTitle !== undefined) {
                 const singleSchedule = {
                     round,
                     date: dateDays.concat("", dateMonth),
                     raceCountry,
                     eventTitle,
-                    trackMap,
                 };
                 raceSchedule.push(singleSchedule);
             }

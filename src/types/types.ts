@@ -47,7 +47,6 @@ export type isRaceSchedule = {
     date: string;
     raceCountry: string;
     eventTitle: string;
-    trackMap: string;
 };
 
 export type isFastestLap = {

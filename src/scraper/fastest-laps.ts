@@ -12,7 +12,7 @@ export const getFastestLaps = async (year: number = new Date().getFullYear()): P
         const response = await axios(`${dynamicLinks.rootLink}/${year}/${dynamicLinks.fastestLap}`);
         const $ = cheerio.load(response.data);
 
-        $(".f1-table > tbody:nth-child(2)").each(function () {
+        $(".f1-table > tbody:nth-child(2) > tr").each(function () {
             const grandPrix: string = $(this).find("td:nth-child(1) > p:nth-child(1)").text().trim();
             const driverFirstName: string = $(this).find("td:nth-child(2) > p:nth-child(1) > span:nth-child(1)").text().trim();
             const driverLastName: string = $(this).find("td:nth-child(2) > p:nth-child(1) > span:nth-child(2)").text().trim();

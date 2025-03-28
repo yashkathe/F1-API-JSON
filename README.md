@@ -1,16 +1,99 @@
 # Formula1 API
 
+**Completely Updated and Adjusted according to the New Changes in Formula 1's Website ~ 2025!**
+
 ![f1](https://logodownload.org/wp-content/uploads/2016/11/formula-1-logo-7.png)  
 
 The scraper scrapes this website: <https://www.formula1.com>
-
-**Completely Updated According to the F1 New Website Changes ~ 2025!**
 
 ## Installation
 
 ```bash
 npm i f1-api-node
 ```
+
+## Example snippet
+  
+The following function will print the current lineup of F1 drivers.
+
+```javascript
+const f1Api = require('f1-api-node') 
+
+const myFunction = async () => {
+    const driverLineup = await f1Api.getDriverData() // replace this function
+    console.log(driverLineup)
+}
+
+myFunction()
+```
+
+## Functions
+
+### **1. getConstructorStandings**  
+  
+| Description | Needs Paramter ? | Paramter Description | Default Argument |
+|:------------|------------------|----------------------|------------------|
+| Fetch Constructors standings from points table | Yes - 1 | The year from which you want to extract points table for (1950 - current) | current year |
+
+![const stnd](./readme/constructor_standing.png)
+
+### **2. getDriverStandings**
+
+| Description | Needs Paramter ? | Paramter Description | Default Argument |
+|:------------|------------------|----------------------|------------------|
+| Fetch F1 driver standings from points table | Yes - 1 |  The year from which you want to extract points table for (1950 - current) | current year |
+
+![driver stnd](./readme/constructor_standing.png)
+
+### **3. getDriverLineup**  
+
+| Description | Needs Paramter ? | Paramter Description | Default Argument |
+|:------------|------------------|----------------------|------------------|
+| Fetch the current lineup of F1 drivers | No |  - | - |
+
+![driver lineup](./readme/driver_lineup.png)
+
+### **4. getTeamLineup**  
+
+| Description | Needs Paramter ? | Paramter Description | Default Argument |
+|:------------|------------------|----------------------|------------------|
+| Fetch the current list of F1 teams | No |  - | - |
+
+![team lineup](./readme/team_lineup.png)
+
+### **5. getWorldChampions**  
+
+| Description | Needs Paramter ? | Paramter Description | Default Argument |
+|:------------|------------------|----------------------|------------------|
+|   Fetch all the world champions   | No |  - | - |
+
+![hall of fame](./readme/world_champion.png)
+
+### **6. getRaceResults** - **[Does Not Work]**  
+
+| Description | Needs Paramter ? | Paramter Description | Default Argument |
+|:------------|------------------|----------------------|------------------|
+|   Fetch race results of all the grand prix in a given year   | Yes - 1  | The year from which you want to extract race results (1950 - current) | - |
+
+![race results](./readme/race_results.png)
+
+### **7. getRaceSchedule** [DOES NOT WORK]
+  
+| Description | Needs Paramter ? | Paramter Description | Default Argument |
+|:------------|------------------|----------------------|------------------|
+| Fetch race schedule for an entire year | Yes - 1 | The year from which you want to extract race schedule | current year |
+
+### **8. getFastestLaps**  
+  
+| Description | Needs Paramter ? | Paramter Description | Default Argument |
+|:------------|------------------|----------------------|------------------|
+| Fetch fastest laps for all races in a year | Yes - 1 | The year from which you want to extract fastest laps | current year |
+
+![fastest lap](./readme/fastest_lap.png)
+
+## Snapshots
+
+If you want to have a look at the output from the given functions check [this](https://github.com/yashkathe/F1-API/tree/master/__tests__/__snapshots__).
 
 ## Accessing API through Docker
 
@@ -41,75 +124,6 @@ docker run -p 80:80 --name f1-api-node-test-1 katheyash/f1-api-node:1
 ```bash
 docker run --env-file ./.env -p 3001:3001 --name f1-api-node-test-1 f1-api-node:1
 ```
-
-## Example snippet
-  
-The following function will print the current lineup of F1 drivers.
-
-```javascript
-const f1Api = require('f1-api-node') 
-
-const myFunction = async () => {
-    const driverLineup = await f1Api.getDriverData()
-    console.log(driverLineup)
-}
-
-myFunction()
-```
-
-## Functions
-
-### **1. getConstructorStandings**  
-  
-| Description | Needs Paramter ? | Paramter Description | Default Argument |
-|:------------|------------------|----------------------|------------------|
-| Fetch Constructors standings from points table | Yes - 1 | The year from which you want to extract points table for (1950 - current) | current year |
-
-### **2. getDriverStandings**
-
-| Description | Needs Paramter ? | Paramter Description | Default Argument |
-|:------------|------------------|----------------------|------------------|
-| Fetch F1 driver standings from points table | Yes - 1 |  The year from which you want to extract points table for (1950 - current) | current year |
-
-### **3. getDriverLineup**  
-
-| Description | Needs Paramter ? | Paramter Description | Default Argument |
-|:------------|------------------|----------------------|------------------|
-| Fetch the current lineup of F1 drivers | No |  - | - |
-
-### **4. getTeamLineup**  
-
-| Description | Needs Paramter ? | Paramter Description | Default Argument |
-|:------------|------------------|----------------------|------------------|
-| Fetch the current list of F1 teams | No |  - | - |
-
-### **5. getWorldChampions**  
-
-| Description | Needs Paramter ? | Paramter Description | Default Argument |
-|:------------|------------------|----------------------|------------------|
-|   Fetch all the world champions   | No |  - | - |
-
-### **6. getRaceResults**  
-
-| Description | Needs Paramter ? | Paramter Description | Default Argument |
-|:------------|------------------|----------------------|------------------|
-|   Fetch race results of all the grand prix in a given year   | Yes - 1  | The year from which you want to extract race results (1950 - current) | - |
-
-### **7. getRaceSchedule**  
-  
-| Description | Needs Paramter ? | Paramter Description | Default Argument |
-|:------------|------------------|----------------------|------------------|
-| Fetch race schedule for an entire year | Yes - 1 | The year from which you want to extract race schedule | current year |
-
-### **8. getFastestLaps**  
-  
-| Description | Needs Paramter ? | Paramter Description | Default Argument |
-|:------------|------------------|----------------------|------------------|
-| Fetch fastest laps for all races in a year | Yes - 1 | The year from which you want to extract fastest laps | current year |
-
-## Snapshots
-
-If you want to have a look at the output from the given functions check [this](https://github.com/yashkathe/F1-API/tree/master/__tests__/__snapshots__).
 
 ## Usage
 
