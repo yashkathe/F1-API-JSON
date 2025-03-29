@@ -43,7 +43,7 @@ myFunction()
 |:------------|------------------|----------------------|------------------|
 | Fetch F1 driver standings from points table | Yes - 1 |  The year from which you want to extract points table for (1950 - current) | current year |
 
-![driver stnd](./readme/constructor_standing.png)
+![driver stnd](./readme/driver_standing.png)
 
 ### **3. getDriverLineup**  
 
