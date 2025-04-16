@@ -69,7 +69,7 @@ myFunction()
 
 ![hall of fame](./readme/world_champion.png)
 
-### **6. getRaceResults** - **[Does Not Work]**  
+### **6. getRaceResults** 
 
 | Description | Needs Paramter ? | Paramter Description | Default Argument |
 |:------------|------------------|----------------------|------------------|
