@@ -77,11 +77,13 @@ myFunction()
 
 ![race results](./readme/race_results.png)
 
-### **7. getRaceSchedule** [DOES NOT WORK]
+### **7. getRaceSchedule**
   
 | Description | Needs Paramter ? | Paramter Description | Default Argument |
 |:------------|------------------|----------------------|------------------|
 | Fetch race schedule for an entire year | Yes - 1 | The year from which you want to extract race schedule | current year |
+
+![alt text](/readme/race_schedule.png)
 
 ### **8. getFastestLaps**  
   
@@ -104,7 +106,7 @@ The docker image of the rest api can be found on [Docker Hub](https://hub.docker
 #### 1. Pull from Docker Hub
 
 ```bash
-docker push katheyash/f1-api-node:tagname
+docker pull katheyash/f1-api-node:tagname
 ```
 
 #### 2. Pull from Github Container Registry

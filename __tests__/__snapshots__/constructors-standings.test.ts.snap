@@ -3,32 +3,32 @@
 exports[`constrcutor standings 1`] = `
 [
   {
-    "points": 78,
+    "points": 188,
     "position": 1,
     "team": "McLaren Mercedes",
   },
   {
-    "points": 57,
+    "points": 111,
     "position": 2,
     "team": "Mercedes",
   },
   {
-    "points": 36,
+    "points": 89,
     "position": 3,
     "team": "Red Bull Racing Honda RBPT",
   },
   {
-    "points": 17,
+    "points": 78,
     "position": 4,
-    "team": "Williams Mercedes",
-  },
-  {
-    "points": 17,
-    "position": 5,
     "team": "Ferrari",
   },
   {
-    "points": 14,
+    "points": 25,
+    "position": 5,
+    "team": "Williams Mercedes",
+  },
+  {
+    "points": 20,
     "position": 6,
     "team": "Haas Ferrari",
   },
@@ -38,19 +38,19 @@ exports[`constrcutor standings 1`] = `
     "team": "Aston Martin Aramco Mercedes",
   },
   {
-    "points": 6,
+    "points": 8,
     "position": 8,
-    "team": "Kick Sauber Ferrari",
-  },
-  {
-    "points": 3,
-    "position": 9,
     "team": "Racing Bulls Honda RBPT",
   },
   {
-    "points": 0,
-    "position": 10,
+    "points": 6,
+    "position": 9,
     "team": "Alpine Renault",
+  },
+  {
+    "points": 6,
+    "position": 10,
+    "team": "Kick Sauber Ferrari",
   },
 ]
 `;

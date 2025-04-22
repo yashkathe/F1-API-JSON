@@ -21,8 +21,6 @@ export const getFastestLaps = async (year: number = new Date().getFullYear()): P
 
             const driver: string = driverFirstName.concat(" ", driverLastName);
 
-            console.log(driver, grandPrix, car, time);
-
             if (driver.length !== 0 && grandPrix.length !== 0 && car.length !== 0 && time.length !== 0) {
                 const fastestLap: isFastestLap = {
                     driver,

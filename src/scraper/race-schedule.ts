@@ -12,15 +12,15 @@ export const getRaceSchedule = async (year: number = new Date().getFullYear()): 
         const response = await axios(`${dynamicLinks.raceSchedule}/${year}.html`);
         const $ = cheerio.load(response.data);
 
-        $("div.f1-container:nth-child(3)").each(function() {
+        $("a.outline-offset-4").each(function() {
             const round: string = $(this).find("a.outline-offset-4 > fieldset:nth-child(1) > legend:nth-child(1) > p:nth-child(1)").text().trim();
-            const dateDays: string = $(this)
-                .find("a.outline-offset-4 > fieldset:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > p:nth-child(1) > span:nth-child(1)")
+            const dateDays1: string = $(this).find("div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > p:nth-child(1) > span:nth-child(1)").text().trim();
+            const dateDays2: string = $(this).find("div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > p:nth-child(1) > span:nth-child(1)").text().trim();
+            const dateMonth1: string = $(this).find("div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > p:nth-child(1) > span:nth-child(1)").text().trim();
+            const dateMonth2: string = $(this)
+                .find("div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > span:nth-child(1) > span:nth-child(1)")
                 .text()
                 .trim();
-            const dateMonth: string = $(this)
-                .find("a.outline-offset-4 > fieldset:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > p:nth-child(1) > span:nth-child(1)")
-                .text();
             const raceCountry: string = $(this)
                 .find("a.outline-offset-4 > fieldset:nth-child(1) > div:nth-child(2) > div:nth-child(3) > div:nth-child(1) > p:nth-child(1)")
                 .text()
@@ -29,6 +29,9 @@ export const getRaceSchedule = async (year: number = new Date().getFullYear()): 
                 .find("a.outline-offset-4 > fieldset:nth-child(1) > div:nth-child(2) > div:nth-child(3) > div:nth-child(2) > p:nth-child(1)")
                 .text()
                 .trim();
+
+            const dateDays = dateDays1 || dateDays2;
+            const dateMonth = dateMonth1 || dateMonth2;
 
             if (round !== undefined && raceCountry !== undefined && eventTitle !== undefined) {
                 const singleSchedule = {
@@ -49,3 +52,5 @@ export const getRaceSchedule = async (year: number = new Date().getFullYear()): 
         throw new Error(error);
     }
 };
+
+getRaceSchedule(2024);

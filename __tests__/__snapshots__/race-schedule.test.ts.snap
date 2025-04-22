@@ -1,0 +1,156 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`get race schedule 1`] = `
+[
+  {
+    "date": "26-28Feb",
+    "eventTitle": "FORMULA 1 ARAMCO PRE-SEASON TESTING 2025",
+    "raceCountry": "Sakhir",
+    "round": "TESTING",
+  },
+  {
+    "date": "14-16Mar",
+    "eventTitle": "FORMULA 1 LOUIS VUITTON AUSTRALIAN GRAND PRIX 2025",
+    "raceCountry": "Australia",
+    "round": "ROUND 1",
+  },
+  {
+    "date": "21-23Mar",
+    "eventTitle": "FORMULA 1 HEINEKEN CHINESE GRAND PRIX 2025",
+    "raceCountry": "China",
+    "round": "ROUND 2",
+  },
+  {
+    "date": "04-06Apr",
+    "eventTitle": "FORMULA 1 LENOVO JAPANESE GRAND PRIX 2025",
+    "raceCountry": "Japan",
+    "round": "ROUND 3",
+  },
+  {
+    "date": "11-13Apr",
+    "eventTitle": "FORMULA 1 GULF AIR BAHRAIN GRAND PRIX 2025",
+    "raceCountry": "Bahrain",
+    "round": "ROUND 4",
+  },
+  {
+    "date": "18-20Apr",
+    "eventTitle": "FORMULA 1 STC SAUDI ARABIAN GRAND PRIX 2025",
+    "raceCountry": "Saudi Arabia",
+    "round": "ROUND 5",
+  },
+  {
+    "date": "02-04May",
+    "eventTitle": "FORMULA 1 CRYPTO.COM MIAMI GRAND PRIX 2025",
+    "raceCountry": "Miami",
+    "round": "ROUND 6",
+  },
+  {
+    "date": "16-18May",
+    "eventTitle": "FORMULA 1 AWS GRAN PREMIO DEL MADE IN ITALY E DELL'EMILIA-ROMAGNA 2025",
+    "raceCountry": "Emilia-Romagna",
+    "round": "ROUND 7",
+  },
+  {
+    "date": "23-25May",
+    "eventTitle": "FORMULA 1 TAG HEUER GRAND PRIX DE MONACO 2025",
+    "raceCountry": "Monaco",
+    "round": "ROUND 8",
+  },
+  {
+    "date": "30-01May-Jun",
+    "eventTitle": "FORMULA 1 ARAMCO GRAN PREMIO DE ESPAÑA 2025",
+    "raceCountry": "Spain",
+    "round": "ROUND 9",
+  },
+  {
+    "date": "13-15Jun",
+    "eventTitle": "FORMULA 1 PIRELLI GRAND PRIX DU CANADA 2025",
+    "raceCountry": "Canada",
+    "round": "ROUND 10",
+  },
+  {
+    "date": "27-29Jun",
+    "eventTitle": "FORMULA 1 MSC CRUISES AUSTRIAN GRAND PRIX 2025",
+    "raceCountry": "Austria",
+    "round": "ROUND 11",
+  },
+  {
+    "date": "04-06Jul",
+    "eventTitle": "FORMULA 1 QATAR AIRWAYS BRITISH GRAND PRIX 2025",
+    "raceCountry": "Great Britain",
+    "round": "ROUND 12",
+  },
+  {
+    "date": "25-27Jul",
+    "eventTitle": "FORMULA 1 MOËT & CHANDON BELGIAN GRAND PRIX 2025",
+    "raceCountry": "Belgium",
+    "round": "ROUND 13",
+  },
+  {
+    "date": "01-03Aug",
+    "eventTitle": "FORMULA 1 LENOVO HUNGARIAN GRAND PRIX 2025",
+    "raceCountry": "Hungary",
+    "round": "ROUND 14",
+  },
+  {
+    "date": "29-31Aug",
+    "eventTitle": "FORMULA 1 HEINEKEN DUTCH GRAND PRIX 2025",
+    "raceCountry": "Netherlands",
+    "round": "ROUND 15",
+  },
+  {
+    "date": "05-07Sep",
+    "eventTitle": "FORMULA 1 PIRELLI GRAN PREMIO D’ITALIA 2025",
+    "raceCountry": "Italy",
+    "round": "ROUND 16",
+  },
+  {
+    "date": "19-21Sep",
+    "eventTitle": "FORMULA 1 QATAR AIRWAYS AZERBAIJAN GRAND PRIX 2025",
+    "raceCountry": "Azerbaijan",
+    "round": "ROUND 17",
+  },
+  {
+    "date": "03-05Oct",
+    "eventTitle": "FORMULA 1 SINGAPORE AIRLINES SINGAPORE GRAND PRIX 2025",
+    "raceCountry": "Singapore",
+    "round": "ROUND 18",
+  },
+  {
+    "date": "17-19Oct",
+    "eventTitle": "FORMULA 1 MSC CRUISES UNITED STATES GRAND PRIX 2025",
+    "raceCountry": "United States",
+    "round": "ROUND 19",
+  },
+  {
+    "date": "24-26Oct",
+    "eventTitle": "FORMULA 1 GRAN PREMIO DE LA CIUDAD DE MÉXICO 2025",
+    "raceCountry": "Mexico",
+    "round": "ROUND 20",
+  },
+  {
+    "date": "07-09Nov",
+    "eventTitle": "FORMULA 1 MSC CRUISES GRANDE PRÊMIO DE SÃO PAULO 2025",
+    "raceCountry": "Brazil",
+    "round": "ROUND 21",
+  },
+  {
+    "date": "20-22Nov",
+    "eventTitle": "FORMULA 1 HEINEKEN LAS VEGAS GRAND PRIX 2025",
+    "raceCountry": "Las Vegas",
+    "round": "ROUND 22",
+  },
+  {
+    "date": "28-30Nov",
+    "eventTitle": "FORMULA 1 QATAR AIRWAYS QATAR GRAND PRIX 2025",
+    "raceCountry": "Qatar",
+    "round": "ROUND 23",
+  },
+  {
+    "date": "05-07Dec",
+    "eventTitle": "FORMULA 1 ETIHAD AIRWAYS ABU DHABI GRAND PRIX 2025",
+    "raceCountry": "Abu Dhabi",
+    "round": "ROUND 24",
+  },
+]
+`;
