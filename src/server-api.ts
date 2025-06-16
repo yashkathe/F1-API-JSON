@@ -4,6 +4,7 @@ import helmet from "helmet";
 import dotenv from "dotenv";
 
 import router from "./endpoints-api/routes-api";
+import { getFullRaceResults, getRaceResults } from "./server";
 
 dotenv.config();
 

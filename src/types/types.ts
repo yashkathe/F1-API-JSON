@@ -55,3 +55,15 @@ export type isFastestLap = {
     car: string;
     time: string;
 };
+
+//
+
+export type isFullRaceResult = {
+    name: string;
+    driverCode: string;
+    team: string;
+    laps: number;
+    time: string;
+    points: number;
+    number: number;
+};
