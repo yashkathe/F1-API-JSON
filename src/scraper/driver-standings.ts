@@ -16,7 +16,7 @@ export const getDriverStandings = async (year: number = new Date().getFullYear()
             const position: number = parseInt($(this).find("td:nth-child(1) > p:nth-child(1)").text());
             const driver_1: string = $(this).find("td:nth-child(2) > p:nth-child(1) > a:nth-child(1) > span:nth-child(1)").text();
             const driver_2: string = $(this).find("td:nth-child(2) > p:nth-child(1) > a:nth-child(1) > span:nth-child(2)").text();
-            const driver: string = driver_1.concat(" ", driver_2)
+            const driver: string = driver_1.concat(" ", driver_2);
             const nationality: string = $(this).find(" td:nth-child(3) > p:nth-child(1)").text();
             const team: string = $(this).find("td:nth-child(4) > p:nth-child(1) > a:nth-child(1)").text();
             const points: number = parseInt($(this).find(" td:nth-child(5) > p:nth-child(1) ").text());

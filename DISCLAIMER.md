@@ -1,4 +1,3 @@
-
 <h1 align="center">Disclaimer</h1>
 
 <div align="center">
@@ -32,7 +31,6 @@ This project has no control on the content it is serving, using copyrighted cont
 <b>
 A browser is a tool, and the maliciousness of the tool is directly based on the user.  
 </b>
-
 
 <b> Do not harass the maintainer. </b>
 

@@ -12,7 +12,7 @@ export const getRaceSchedule = async (year: number = new Date().getFullYear()): 
         const response = await axios(`${dynamicLinks.raceSchedule}/${year}.html`);
         const $ = cheerio.load(response.data);
 
-        $("a.outline-offset-4").each(function() {
+        $("a.outline-offset-4").each(function () {
             const round: string = $(this).find("a.outline-offset-4 > fieldset:nth-child(1) > legend:nth-child(1) > p:nth-child(1)").text().trim();
             const dateDays1: string = $(this).find("div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > p:nth-child(1) > span:nth-child(1)").text().trim();
             const dateDays2: string = $(this).find("div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > p:nth-child(1) > span:nth-child(1)").text().trim();

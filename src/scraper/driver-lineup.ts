@@ -13,7 +13,7 @@ export const getDriverLineup = async (): Promise<isDriver[]> => {
         const $ = cheerio.load(response.data);
 
         // drivers with ranking
-        $("a.focus-visible\\:outline-0").each(function() {
+        $("a.focus-visible\\:outline-0").each(function () {
             const firstName: string = $(this).find("div:nth-child(1) > div:nth-child(1) > div:nth-child(3) > div:nth-child(1) > div:nth-child(1) > p:nth-child(1)").text().trim();
             const secondName: string = $(this).find("div:nth-child(1) > div:nth-child(1) > div:nth-child(3) > div:nth-child(1) > div:nth-child(1) > p:nth-child(2)").text().trim();
             const team: string = $(this).find("div:nth-child(1) > div:nth-child(1) > p:nth-child(5)").text();
@@ -34,7 +34,7 @@ export const getDriverLineup = async (): Promise<isDriver[]> => {
         });
 
         // drivers without ranking
-        $("a.group").each(function() {
+        $("a.group").each(function () {
             const firstName: string = $(this).find("div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > p:nth-child(1)").text().trim();
             const secondName: string = $(this).find("div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > p:nth-child(2)").text().trim();
             const team: string = $(this).find("div:nth-child(1) > div:nth-child(1) > p:nth-child(3)").text();

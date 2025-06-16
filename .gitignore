@@ -1,5 +1,3 @@
 node_modules
 dist
-junk
-*log
-.env
+junk * log.env

@@ -12,7 +12,8 @@
     "scripts": {
         "start": "tsc -p . && nodemon './dist/server.js'",
         "start-api": "nodemon './dist/server-api.js'",
-        "test": "rm -rf __tests__/__snapshots__/ && jest",
+        "dev": "nodemon",
+        "test": "jest",
         "build": "tsc -p ."
     },
     "repository": {
@@ -46,6 +47,7 @@
         "nodemon": "^2.0.20",
         "prettier": "2.7.1",
         "ts-jest": "^29.0.3",
+        "tsx": "^4.20.3",
         "typescript": "^4.8.4"
     },
     "dependencies": {

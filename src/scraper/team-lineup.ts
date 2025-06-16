@@ -12,7 +12,7 @@ export const getTeamLineup = async (): Promise<isTeam[]> => {
         const response = await axios(staticLinks.teams);
         const $ = cheerio.load(response.data);
 
-        $("a.group").each(function() {
+        $("a.group").each(function () {
             const name: string = $(this).find("div > div:nth-child(3) > div:nth-child(1) > span:nth-child(1)").text();
             const driver1_0: string = $(this).find("div > div:nth-child(5) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > p:nth-child(1)").text();
             const driver1_1: string = $(this).find("div > div:nth-child(5) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > p:nth-child(2)").text();

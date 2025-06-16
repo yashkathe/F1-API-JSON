@@ -26,5 +26,5 @@ export const dynamicLinks: dynamicLinks = {
     results: "races.html",
     fastestLap: "fastest-laps.html",
     // raceSchedule: "https://www.formula1.com/en/racing/2022.html",
-    raceSchedule: "https://www.formula1.com/en/racing"
+    raceSchedule: "https://www.formula1.com/en/racing",
 };
