@@ -13,13 +13,15 @@ export const getDriverLineup = async (): Promise<isDriver[]> => {
         const $ = cheerio.load(response.data);
 
         // drivers with ranking
-        $("a.focus-visible\\:outline-0").each(function () {
-            const firstName: string = $(this).find("div:nth-child(1) > div:nth-child(1) > div:nth-child(3) > div:nth-child(1) > div:nth-child(1) > p:nth-child(1)").text().trim();
-            const secondName: string = $(this).find("div:nth-child(1) > div:nth-child(1) > div:nth-child(3) > div:nth-child(1) > div:nth-child(1) > p:nth-child(2)").text().trim();
-            const team: string = $(this).find("div:nth-child(1) > div:nth-child(1) > p:nth-child(5)").text();
-            const rank: string | undefined = $(this).find("div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > p:nth-child(1)").text().trim();
-            const nationalityImage: string | undefined = $(this).find("div:nth-child(1) > div:nth-child(1) > div:nth-child(3) > img:nth-child(2)").attr("src");
-            const driverImage: string | undefined = $(this).find("div:nth-child(1) > div:nth-child(1) > div:nth-child(6) > img:nth-child(2)").attr("src");
+        $("a[data-f1rd-a7s-click=driver_card_click]").each(function (index: number) {
+            const firstName: string = $(this).find("div:nth-child(1) > div:nth-child(4) > p:nth-child(1)").text().trim();
+            const secondName: string = $(this).find("div:nth-child(1) > div:nth-child(4) > p:nth-child(2)").text().trim();
+            const team: string = $(this).find("div:nth-child(1) > div:nth-child(4) >  div:nth-child(3) >  p:nth-child(1)").text();
+            const rank: string | undefined = String(++index);
+
+            //Updated to retrieve SVG due to switch to SVG flags
+            const nationalityImage: string = $(this).find("div:nth-child(1) > div:nth-child(6)").html() || "";
+            const driverImage: string | undefined = $(this).find("div:nth-child(1) > div:nth-child(7) >  div:nth-child(1) >  img").attr("src");
 
             if (firstName.length !== 0 && secondName.length !== 0 && team.length !== 0 && rank?.length !== 0 && nationalityImage?.length !== 0 && driverImage?.length !== 0) {
                 const driver: isDriver = {

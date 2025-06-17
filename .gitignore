@@ -1,3 +1,5 @@
 node_modules
 dist
 junk * log.env
+
+src/index.ts
