@@ -10,7 +10,7 @@ import { validateScrapedResult } from "../utils/validation";
 /**
  *
  * @param {year} year - 1950-now
- * @param {string} raceName
+ * @param {string} [raceName="Australia"]
  * @returns
  */
 
@@ -18,7 +18,7 @@ export const getFullRaceResults = async (year: number = new Date().getFullYear()
     try {
         const resultsURL = await getResultURL(year, raceName);
 
-        const results = await axios(`${staticLinks.fullResults}/${year}/${resultsURL}`);
+        const results = await axios(`${staticLinks.fullResults}/${year}/${resultsURL.slice(23, resultsURL.length)}`);
         const raceResults: isFullRaceResult[] = [];
         const $ = cheerio.load(results.data);
         $(".f1-table > tbody > tr").each(function () {
