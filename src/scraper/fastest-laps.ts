@@ -11,15 +11,16 @@ export const getFastestLaps = async (year: number = new Date().getFullYear()): P
 
         const response = await axios(`${dynamicLinks.rootLink}/${year}/${dynamicLinks.fastestLap}`);
         const $ = cheerio.load(response.data);
+        console.log(`${dynamicLinks.rootLink}/${year}/${dynamicLinks.fastestLap}`);
 
         $(".f1-table > tbody:nth-child(2) > tr").each(function () {
-            const grandPrix: string = $(this).find("td:nth-child(1) > p:nth-child(1)").text().trim();
-            const driverFirstName: string = $(this).find("td:nth-child(2) > p:nth-child(1) > span:nth-child(1)").text().trim();
-            const driverLastName: string = $(this).find("td:nth-child(2) > p:nth-child(1) > span:nth-child(2)").text().trim();
+            const grandPrixAll: Text = $(this).find("td:nth-child(1) > p:nth-child(1) > a").contents().get()[1];
+            const grandPrix: string = $(grandPrixAll).text();
+            const driverName: string = $(this).find("td:nth-child(2) > p:nth-child(1) > span:nth-child(1)").text().trim();
             const car: string = $(this).find("td:nth-child(3) > p:nth-child(1)").text().trim();
             const time: string = $(this).find("td:nth-child(4) > p:nth-child(1)").text().trim();
 
-            const driver: string = driverFirstName.concat(" ", driverLastName);
+            const driver: string = driverName.slice(0, driverName.length - 3);
 
             if (driver.length !== 0 && grandPrix.length !== 0 && car.length !== 0 && time.length !== 0) {
                 const fastestLap: isFastestLap = {

@@ -1,4 +1,4 @@
-// export { getFastestLaps } from "./scraper/fastest-laps";
+export { getFastestLaps } from "./scraper/fastest-laps";
 export { getDriverLineup } from "./scraper/driver-lineup";
 // export { getTeamLineup } from "./scraper/team-lineup";
 // export { getDriverStandings } from "./scraper/driver-standings";
