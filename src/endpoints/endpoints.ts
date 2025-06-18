@@ -2,6 +2,7 @@ interface staticLinks {
     drivers: string;
     teams: string;
     hallOfFame: string;
+    teamsPoints: string;
 }
 
 interface dynamicLinks {
@@ -16,6 +17,7 @@ interface dynamicLinks {
 export const staticLinks: staticLinks = {
     drivers: "https://www.formula1.com/en/drivers.html",
     teams: "https://www.formula1.com/en/teams.html",
+    teamsPoints: `https://www.formula1.com/en/results/${new Date().getFullYear()}/team`,
     hallOfFame: "https://www.formula1.com/en/drivers/hall-of-fame.html",
 };
 
