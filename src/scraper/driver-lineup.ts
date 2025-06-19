@@ -39,7 +39,7 @@ export const getDriverLineup = async (): Promise<isDriver[]> => {
         $("a.group").each(function () {
             const firstName: string = $(this).find("div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > p:nth-child(1)").text().trim();
             const secondName: string = $(this).find("div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > p:nth-child(2)").text().trim();
-            const team: string = $(this).find("div:nth-child(1) > div:nth-child(1) > p:nth-child(3)").text();
+            const team: string = $(this).find("div:nth-child(1) > div:nth-child(1) > p:nth-child(3)").text().trim();
             const nationalityImage: string | undefined = $(this).find("div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > img:nth-child(2)").attr("src");
             const driverImage: string | undefined = $(this).find("div:nth-child(1) > div:nth-child(1) > div:nth-child(4) > img:nth-child(2)").attr("src");
 
