@@ -14,7 +14,7 @@ export const getFastestLaps = async (year: number = new Date().getFullYear()): P
         console.log(`${dynamicLinks.rootLink}/${year}/${dynamicLinks.fastestLap}`);
 
         $(".f1-table > tbody:nth-child(2) > tr").each(function () {
-            const grandPrixAll: Text = $(this).find("td:nth-child(1) > p:nth-child(1) > a").contents().get()[1];
+            const grandPrixAll: string = $(this).find("td:nth-child(1) > p:nth-child(1) > a").contents().get()[1];
             const grandPrix: string = $(grandPrixAll).text();
             const driverName: string = $(this).find("td:nth-child(2) > p:nth-child(1) > span:nth-child(1)").text().trim();
             const car: string = $(this).find("td:nth-child(3) > p:nth-child(1)").text().trim();
