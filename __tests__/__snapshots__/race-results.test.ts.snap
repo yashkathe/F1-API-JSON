@@ -8,7 +8,7 @@ exports[`get race results 1`] = `
     "grandPrix": "Australia",
     "laps": 58,
     "time": "1:34:01.987",
-    "winner": "Michael Schumacher",
+    "winner": "Michael Schumacher",
   },
   {
     "car": "Ferrari",
@@ -16,7 +16,7 @@ exports[`get race results 1`] = `
     "grandPrix": "Brazil",
     "laps": 71,
     "time": "1:31:35.271",
-    "winner": "Michael Schumacher",
+    "winner": "Michael Schumacher",
   },
   {
     "car": "Ferrari",
@@ -24,7 +24,7 @@ exports[`get race results 1`] = `
     "grandPrix": "San Marino",
     "laps": 62,
     "time": "1:31:39.776",
-    "winner": "Michael Schumacher",
+    "winner": "Michael Schumacher",
   },
   {
     "car": "McLaren Mercedes",
@@ -32,7 +32,7 @@ exports[`get race results 1`] = `
     "grandPrix": "Great Britain",
     "laps": 60,
     "time": "1:28:50.108",
-    "winner": "David Coulthard",
+    "winner": "David Coulthard",
   },
   {
     "car": "McLaren Mercedes",
@@ -40,7 +40,7 @@ exports[`get race results 1`] = `
     "grandPrix": "Spain",
     "laps": 65,
     "time": "1:33:55.390",
-    "winner": "Mika Hakkinen",
+    "winner": "Mika Hakkinen",
   },
   {
     "car": "Ferrari",
@@ -48,7 +48,7 @@ exports[`get race results 1`] = `
     "grandPrix": "Europe",
     "laps": 67,
     "time": "1:42:00.307",
-    "winner": "Michael Schumacher",
+    "winner": "Michael Schumacher",
   },
   {
     "car": "McLaren Mercedes",
@@ -56,7 +56,7 @@ exports[`get race results 1`] = `
     "grandPrix": "Monaco",
     "laps": 78,
     "time": "1:49:28.213",
-    "winner": "David Coulthard",
+    "winner": "David Coulthard",
   },
   {
     "car": "Ferrari",
@@ -64,7 +64,7 @@ exports[`get race results 1`] = `
     "grandPrix": "Canada",
     "laps": 69,
     "time": "1:41:12.313",
-    "winner": "Michael Schumacher",
+    "winner": "Michael Schumacher",
   },
   {
     "car": "McLaren Mercedes",
@@ -72,7 +72,7 @@ exports[`get race results 1`] = `
     "grandPrix": "France",
     "laps": 72,
     "time": "1:38:05.538",
-    "winner": "David Coulthard",
+    "winner": "David Coulthard",
   },
   {
     "car": "McLaren Mercedes",
@@ -80,7 +80,7 @@ exports[`get race results 1`] = `
     "grandPrix": "Austria",
     "laps": 71,
     "time": "1:28:15.818",
-    "winner": "Mika Hakkinen",
+    "winner": "Mika Hakkinen",
   },
   {
     "car": "Ferrari",
@@ -88,7 +88,7 @@ exports[`get race results 1`] = `
     "grandPrix": "Germany",
     "laps": 45,
     "time": "1:25:34.418",
-    "winner": "Rubens Barrichello",
+    "winner": "Rubens Barrichello",
   },
   {
     "car": "McLaren Mercedes",
@@ -96,7 +96,7 @@ exports[`get race results 1`] = `
     "grandPrix": "Hungary",
     "laps": 77,
     "time": "1:45:33.869",
-    "winner": "Mika Hakkinen",
+    "winner": "Mika Hakkinen",
   },
   {
     "car": "McLaren Mercedes",
@@ -104,7 +104,7 @@ exports[`get race results 1`] = `
     "grandPrix": "Belgium",
     "laps": 44,
     "time": "1:28:14.494",
-    "winner": "Mika Hakkinen",
+    "winner": "Mika Hakkinen",
   },
   {
     "car": "Ferrari",
@@ -112,7 +112,7 @@ exports[`get race results 1`] = `
     "grandPrix": "Italy",
     "laps": 53,
     "time": "1:27:31.638",
-    "winner": "Michael Schumacher",
+    "winner": "Michael Schumacher",
   },
   {
     "car": "Ferrari",
@@ -120,7 +120,7 @@ exports[`get race results 1`] = `
     "grandPrix": "United States",
     "laps": 73,
     "time": "1:36:30.883",
-    "winner": "Michael Schumacher",
+    "winner": "Michael Schumacher",
   },
   {
     "car": "Ferrari",
@@ -128,7 +128,7 @@ exports[`get race results 1`] = `
     "grandPrix": "Japan",
     "laps": 53,
     "time": "1:29:53.435",
-    "winner": "Michael Schumacher",
+    "winner": "Michael Schumacher",
   },
   {
     "car": "Ferrari",
@@ -136,7 +136,7 @@ exports[`get race results 1`] = `
     "grandPrix": "Malaysia",
     "laps": 56,
     "time": "1:35:54.235",
-    "winner": "Michael Schumacher",
+    "winner": "Michael Schumacher",
   },
 ]
 `;

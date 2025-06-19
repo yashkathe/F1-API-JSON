@@ -11,7 +11,6 @@ export const getFastestLaps = async (year: number = new Date().getFullYear()): P
 
         const response = await axios(`${dynamicLinks.rootLink}/${year}/${dynamicLinks.fastestLap}`);
         const $ = cheerio.load(response.data);
-        console.log(`${dynamicLinks.rootLink}/${year}/${dynamicLinks.fastestLap}`);
 
         $(".f1-table > tbody:nth-child(2) > tr").each(function () {
             const grandPrixAll: string = $(this).find("td:nth-child(1) > p:nth-child(1) > a").contents().get()[1];
