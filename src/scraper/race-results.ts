@@ -20,8 +20,7 @@ export const getRaceResults = async (year: number = new Date().getFullYear()): P
             const car: string = $(this).find("td:nth-child(4) > p:nth-child(1)").text().trim();
             const laps: number = parseInt($(this).find("td:nth-child(5) > p:nth-child(1)").text().trim());
             const time: string = $(this).find("td:nth-child(6) > p:nth-child(1)").text().trim();
-
-            const date = new Date(Date.parse(`${raceDate} ${year}`));
+            const date = new Date(Date.parse(`${raceDate} ${year} 00:00:00 GMT`));
             const grandPrix = $(grandPrixAll).text();
             if ((grandPrix.length !== 0 && raceDate.length !== 0 && winner.length !== 0, car.length !== 0, !Number.isNaN(laps), time.length !== 0)) {
                 const raceResult: isRaceResult = {
