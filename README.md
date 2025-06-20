@@ -102,7 +102,7 @@ myFunction();
 
 ![full race results](./readme/full-race-results.png)
 
-### **10. getFullRaceResults**
+### **10. getQualiRaceResults**
 
 | Parameter     | Description                               | Default Value |
 | ------------- | ----------------------------------------- | ------------- |
