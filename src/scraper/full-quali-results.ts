@@ -19,7 +19,6 @@ export async function getFullQualiResults(year: number = new Date().getFullYear(
         const resultsURL = await getResultURL(year, raceName);
 
         const qualiResultsURL: string = `${staticLinks.fullResults}/${year}/${resultsURL.slice(23, resultsURL.length - 11)}qualifying`;
-        console.log(qualiResultsURL);
         function assignTableValues(driver: string[]): isFullQualiResult {
             return {
                 position: driver[0],
