@@ -7,3 +7,4 @@ export { getWorldChampions } from "./scraper/world-champions";
 export { getRaceResults } from "./scraper/race-results";
 export { getRaceSchedule } from "./scraper/race-schedule";
 export { getFullRaceResults } from "./scraper/full-race-results";
+export { getFullQualiResults } from "./scraper/full-quali-results";
