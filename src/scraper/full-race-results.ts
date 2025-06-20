@@ -11,14 +11,14 @@ import { validateScrapedResult } from "../utils/validation";
  *
  * @param {year} year - 1950-now
  * @param {string} [raceName="Australia"]
- * @returns
+ * @returns {Promise<isFullRaceResult[]>}
  */
 
 export const getFullRaceResults = async (year: number = new Date().getFullYear(), raceName: string = "Australia"): Promise<isFullRaceResult[]> => {
     try {
         const resultsURL = await getResultURL(year, raceName);
         const raceResultsURL = `${staticLinks.fullResults}/${year}/${resultsURL.slice(23, resultsURL.length)}`;
-        function assignTableValues(driver: string[]) {
+        function assignTableValues(driver: string[]): isFullRaceResult {
             return {
                 name: driver[2].slice(0, driver[2].length - 3),
                 driverCode: driver[2].slice(driver[2].length - 3),
