@@ -5,7 +5,7 @@ import { staticLinks } from "../endpoints/endpoints";
 
 import { getF1Table, getResultURL } from "../utils/scrapping";
 import { assignPropertyIfDefined } from "../utils/common";
-import { isFullQualiResult } from "../types/types";
+import { isFullQualiResult, qualiTimes } from "../types/types";
 
 /**
  *
@@ -19,15 +19,15 @@ export async function getFullQualiResults(year: number = new Date().getFullYear(
         const resultsURL = await getResultURL(year, raceName);
 
         const qualiResultsURL: string = `${staticLinks.fullResults}/${year}/${resultsURL.slice(23, resultsURL.length - 11)}qualifying`;
-
-        function assignTableValues(driver: string[]) {
+        console.log(qualiResultsURL);
+        function assignTableValues(driver: string[]): isFullQualiResult {
             return {
                 position: driver[0],
-                number: driver[1],
+                number: parseInt(driver[1]),
                 name: driver[2].slice(0, driver[2].length - 3),
                 team: driver[3],
-                times: assignPropertyIfDefined([driver[4], driver[5], driver[6]], ["q1", "q2", "q3"]),
-                laps: parseInt(driver[7]),
+                times: assignPropertyIfDefined([driver[4], driver[6] ? driver[5] : false, driver[7] ? driver[6] : false], ["q1", "q2", "q3"]) as qualiTimes,
+                laps: parseInt(driver[driver.length - 1]),
             };
         }
         return getF1Table(qualiResultsURL, assignTableValues) as unknown as isFullQualiResult[];

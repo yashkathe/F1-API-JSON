@@ -73,6 +73,8 @@ export type isFullQualiResult = {
     number: number;
     name: string;
     team: string;
-    times: { q1: string; q2?: string; q3?: string };
+    times: qualiTimes;
     laps: number;
 };
+
+export type qualiTimes = { q1: string; q2?: string; q3?: string };

@@ -4,7 +4,7 @@
  * @param {string[]} keys
  * @returns {object} - object with properties from keys and values
  */
-export function assignPropertyIfDefined(values: unknown[], keys: string[]): object {
+export function assignPropertyIfDefined(values: unknown[], keys: string[]): Record<string, unknown> {
     if (values.length !== keys.length) throw Error("values.length and keys.length muss be the same");
     const resultObj: Record<string, unknown> = {};
     values.forEach((value: unknown, index: number) => {
