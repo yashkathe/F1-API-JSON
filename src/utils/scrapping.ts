@@ -18,3 +18,21 @@ export async function getResultURL(year: number = new Date().getFullYear(), race
         throw new Error(error);
     }
 }
+
+export async function getF1Table(url: string, callback: Function): Promise<Array<object>> {
+    try {
+        const results = await axios(url);
+        const resultTable: Array<object> = [];
+        const $ = cheerio.load(results.data);
+        $(".f1-table > tbody > tr").each(function () {
+            const driver = $(this)
+                .find("td p")
+                .map((_i, el) => $(el).text())
+                .get();
+            resultTable.push(callback(driver));
+        });
+        return resultTable;
+    } catch (error: any) {
+        throw new Error(error);
+    }
+}

@@ -4,7 +4,7 @@ import * as cheerio from "cheerio";
 import { staticLinks } from "../endpoints/endpoints";
 
 import { isFullRaceResult } from "../types/types";
-import { getResultURL } from "../utils/scrapping";
+import { getF1Table, getResultURL } from "../utils/scrapping";
 import { validateScrapedResult } from "../utils/validation";
 
 /**
@@ -17,18 +17,9 @@ import { validateScrapedResult } from "../utils/validation";
 export const getFullRaceResults = async (year: number = new Date().getFullYear(), raceName: string = "Australia"): Promise<isFullRaceResult[]> => {
     try {
         const resultsURL = await getResultURL(year, raceName);
-
-        const results = await axios(`${staticLinks.fullResults}/${year}/${resultsURL.slice(23, resultsURL.length)}`);
-        const raceResults: isFullRaceResult[] = [];
-        const $ = cheerio.load(results.data);
-        $(".f1-table > tbody > tr").each(function () {
-            const driver = $(this)
-                .find("td p")
-                .map((_i, el) => $(el).text())
-                .get();
-
-            if (!validateScrapedResult(driver)) throw Error("Data cannot be scraped");
-            raceResults.push({
+        const raceResultsURL = `${staticLinks.fullResults}/${year}/${resultsURL.slice(23, resultsURL.length)}`;
+        function assignTableValues(driver: string[]) {
+            return {
                 name: driver[2].slice(0, driver[2].length - 3),
                 driverCode: driver[2].slice(driver[2].length - 3),
                 team: driver[3],
@@ -36,9 +27,10 @@ export const getFullRaceResults = async (year: number = new Date().getFullYear()
                 time: driver[5],
                 points: Number(driver[6]),
                 number: Number(driver[1]),
-            });
-        });
-        return raceResults;
+            };
+        }
+
+        return getF1Table(raceResultsURL, assignTableValues) as unknown as isFullRaceResult[];
     } catch (error: any) {
         throw new Error(error);
     }

@@ -69,5 +69,3 @@ export const getRaceSchedule = async (year: number = new Date().getFullYear()): 
         throw new Error(error);
     }
 };
-
-getRaceSchedule(2024);
