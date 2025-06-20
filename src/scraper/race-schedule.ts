@@ -42,10 +42,18 @@ export const getRaceSchedule = async (year: number = new Date().getFullYear()): 
             //Semantics differ for the next race
             if (raceCountry === "") raceCountry = $(this).find("div:nth-child(1) > div:nth-child(2) > span:nth-child(2) > p:nth-child(2)").text().trim();
 
+            date = date.replaceAll(" ", "");
+
+            //Cross-month
+            if (date.length > 8) {
+                const dateParts: string[] = [date.slice(0, 2), date.slice(2, 5), date.slice(6, 8), date.slice(8, 13)];
+                date = `${dateParts[0]}-${dateParts[2]}${dateParts[1]}-${dateParts[3]}`;
+            }
+
             if (round !== undefined && raceCountry !== undefined && eventTitle !== undefined) {
                 const singleSchedule = {
                     round,
-                    date: date.replaceAll(" ", ""),
+                    date,
                     raceCountry,
                     eventTitle,
                 };

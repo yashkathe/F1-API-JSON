@@ -57,7 +57,7 @@ exports[`get race schedule 1`] = `
     "round": "ROUND 8",
   },
   {
-    "date": "30May-01Jun",
+    "date": "30-01May-Jun",
     "eventTitle": "FORMULA 1 ARAMCO GRAN PREMIO DE ESPAÑA 2025",
     "raceCountry": "Spain",
     "round": "ROUND 9",

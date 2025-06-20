@@ -3,3 +3,4 @@ dist
 junk * log.env
 
 src/index.ts
+commit.bat
