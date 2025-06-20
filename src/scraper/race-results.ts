@@ -16,7 +16,7 @@ export const getRaceResults = async (year: number = new Date().getFullYear()): P
             const grandPrixAll: string = $(this).find("td:nth-child(1) > p:nth-child(1) > a:nth-child(1)").contents().get()[1];
             const raceDate: string = $(this).find("td:nth-child(2) > p:nth-child(1)").text().trim();
             const driverName: string = $(this).find("td:nth-child(3) > p:nth-child(1) > span:nth-child(1)").text().trim();
-            const winner: string = driverName.slice(0, driverName.length - 3);
+            const winner: string = driverName.slice(0, driverName.length - 3).replace(/\u00a0/g, " ");
             const car: string = $(this).find("td:nth-child(4) > p:nth-child(1)").text().trim();
             const laps: number = parseInt($(this).find("td:nth-child(5) > p:nth-child(1)").text().trim());
             const time: string = $(this).find("td:nth-child(6) > p:nth-child(1)").text().trim();
