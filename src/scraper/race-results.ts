@@ -13,19 +13,19 @@ export const getRaceResults = async (year: number = new Date().getFullYear()): P
         const $ = cheerio.load(response.data);
 
         $(".f1-table > tbody:nth-child(2) > tr").each(function () {
-            const grandPrix: string = $(this).find("td:nth-child(1) > p:nth-child(1) > a:nth-child(1)").text().trim();
+            const grandPrixAll: string = $(this).find("td:nth-child(1) > p:nth-child(1) > a:nth-child(1)").contents().get()[1];
             const raceDate: string = $(this).find("td:nth-child(2) > p:nth-child(1)").text().trim();
-            const driverFirstName: string = $(this).find("td:nth-child(3) > p:nth-child(1) > span:nth-child(1)").text().trim();
-            const driverLastName: string = $(this).find("td:nth-child(3) > p:nth-child(1) > span:nth-child(2)").text().trim();
-            const winner: string = driverFirstName.concat(" ", driverLastName);
+            const driverName: string = $(this).find("td:nth-child(3) > p:nth-child(1) > span:nth-child(1)").text().trim();
+            const winner: string = driverName.slice(0, driverName.length - 3).replace(/\u00a0/g, " ");
             const car: string = $(this).find("td:nth-child(4) > p:nth-child(1)").text().trim();
             const laps: number = parseInt($(this).find("td:nth-child(5) > p:nth-child(1)").text().trim());
             const time: string = $(this).find("td:nth-child(6) > p:nth-child(1)").text().trim();
-
+            const date = new Date(Date.parse(`${raceDate} ${year} 00:00:00 GMT`));
+            const grandPrix = $(grandPrixAll).text();
             if ((grandPrix.length !== 0 && raceDate.length !== 0 && winner.length !== 0, car.length !== 0, !Number.isNaN(laps), time.length !== 0)) {
                 const raceResult: isRaceResult = {
                     grandPrix,
-                    date: new Date(raceDate),
+                    date,
                     winner,
                     car,
                     laps,
