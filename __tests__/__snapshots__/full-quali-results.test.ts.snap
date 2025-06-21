@@ -1,10 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`get race results 1`] = `
+exports[`get full quali results 1`] = `
 [
   {
+    "code": "BAR",
     "laps": 11,
-    "name": "Rubens Barrichello",
+    "name": "Rubens Barrichello",
     "number": 4,
     "position": "1",
     "team": "Ferrari",
@@ -13,8 +14,9 @@ exports[`get race results 1`] = `
     },
   },
   {
+    "code": "FRE",
     "laps": 10,
-    "name": "Heinz-Harald Frentzen",
+    "name": "Heinz-Harald Frentzen",
     "number": 5,
     "position": "2",
     "team": "Jordan Mugen Honda",
@@ -23,8 +25,9 @@ exports[`get race results 1`] = `
     },
   },
   {
+    "code": "HAK",
     "laps": 11,
-    "name": "Mika Hakkinen",
+    "name": "Mika Hakkinen",
     "number": 1,
     "position": "3",
     "team": "McLaren Mercedes",
@@ -33,8 +36,9 @@ exports[`get race results 1`] = `
     },
   },
   {
+    "code": "COU",
     "laps": 12,
-    "name": "David Coulthard",
+    "name": "David Coulthard",
     "number": 2,
     "position": "4",
     "team": "McLaren Mercedes",
@@ -43,8 +47,9 @@ exports[`get race results 1`] = `
     },
   },
   {
+    "code": "MSC",
     "laps": 10,
-    "name": "Michael Schumacher",
+    "name": "Michael Schumacher",
     "number": 3,
     "position": "5",
     "team": "Ferrari",
@@ -53,8 +58,9 @@ exports[`get race results 1`] = `
     },
   },
   {
+    "code": "BUT",
     "laps": 12,
-    "name": "Jenson Button",
+    "name": "Jenson Button",
     "number": 10,
     "position": "6",
     "team": "Williams BMW",
@@ -63,8 +69,9 @@ exports[`get race results 1`] = `
     },
   },
   {
+    "code": "RSC",
     "laps": 12,
-    "name": "Ralf Schumacher",
+    "name": "Ralf Schumacher",
     "number": 9,
     "position": "7",
     "team": "Williams BMW",
@@ -73,8 +80,9 @@ exports[`get race results 1`] = `
     },
   },
   {
+    "code": "VER",
     "laps": 10,
-    "name": "Jos Verstappen",
+    "name": "Jos Verstappen",
     "number": 19,
     "position": "8",
     "team": "Arrows Supertec",
@@ -83,8 +91,9 @@ exports[`get race results 1`] = `
     },
   },
   {
+    "code": "IRV",
     "laps": 11,
-    "name": "Eddie Irvine",
+    "name": "Eddie Irvine",
     "number": 7,
     "position": "9",
     "team": "Jaguar Cosworth",
@@ -93,8 +102,9 @@ exports[`get race results 1`] = `
     },
   },
   {
+    "code": "VIL",
     "laps": 11,
-    "name": "Jacques Villeneuve",
+    "name": "Jacques Villeneuve",
     "number": 22,
     "position": "10",
     "team": "BAR Honda",
@@ -103,8 +113,9 @@ exports[`get race results 1`] = `
     },
   },
   {
+    "code": "TRU",
     "laps": 11,
-    "name": "Jarno Trulli",
+    "name": "Jarno Trulli",
     "number": 6,
     "position": "11",
     "team": "Jordan Mugen Honda",
@@ -113,8 +124,9 @@ exports[`get race results 1`] = `
     },
   },
   {
+    "code": "FIS",
     "laps": 12,
-    "name": "Giancarlo Fisichella",
+    "name": "Giancarlo Fisichella",
     "number": 11,
     "position": "12",
     "team": "Benetton Playlife",
@@ -123,8 +135,9 @@ exports[`get race results 1`] = `
     },
   },
   {
+    "code": "DIN",
     "laps": 12,
-    "name": "Pedro Diniz",
+    "name": "Pedro Diniz",
     "number": 16,
     "position": "13",
     "team": "Sauber Petronas",
@@ -133,8 +146,9 @@ exports[`get race results 1`] = `
     },
   },
   {
+    "code": "HER",
     "laps": 12,
-    "name": "Johnny Herbert",
+    "name": "Johnny Herbert",
     "number": 8,
     "position": "14",
     "team": "Jaguar Cosworth",
@@ -143,8 +157,9 @@ exports[`get race results 1`] = `
     },
   },
   {
+    "code": "ALE",
     "laps": 12,
-    "name": "Jean Alesi",
+    "name": "Jean Alesi",
     "number": 14,
     "position": "15",
     "team": "Prost Peugeot",
@@ -153,8 +168,9 @@ exports[`get race results 1`] = `
     },
   },
   {
+    "code": "ZON",
     "laps": 12,
-    "name": "Ricardo Zonta",
+    "name": "Ricardo Zonta",
     "number": 23,
     "position": "16",
     "team": "BAR Honda",
@@ -163,8 +179,9 @@ exports[`get race results 1`] = `
     },
   },
   {
+    "code": "HEI",
     "laps": 12,
-    "name": "Nick Heidfeld",
+    "name": "Nick Heidfeld",
     "number": 15,
     "position": "17",
     "team": "Prost Peugeot",
@@ -173,8 +190,9 @@ exports[`get race results 1`] = `
     },
   },
   {
+    "code": "SAL",
     "laps": 12,
-    "name": "Mika Salo",
+    "name": "Mika Salo",
     "number": 17,
     "position": "18",
     "team": "Sauber Petronas",
@@ -183,8 +201,9 @@ exports[`get race results 1`] = `
     },
   },
   {
+    "code": "DLR",
     "laps": 12,
-    "name": "Pedro de la Rosa",
+    "name": "Pedro de la Rosa",
     "number": 18,
     "position": "19",
     "team": "Arrows Supertec",
@@ -193,8 +212,9 @@ exports[`get race results 1`] = `
     },
   },
   {
+    "code": "WUR",
     "laps": 11,
-    "name": "Alexander Wurz",
+    "name": "Alexander Wurz",
     "number": 12,
     "position": "20",
     "team": "Benetton Playlife",
@@ -203,8 +223,9 @@ exports[`get race results 1`] = `
     },
   },
   {
+    "code": "GEN",
     "laps": 12,
-    "name": "Marc Gene",
+    "name": "Marc Gene",
     "number": 20,
     "position": "21",
     "team": "Minardi Fondmetal",
@@ -213,8 +234,9 @@ exports[`get race results 1`] = `
     },
   },
   {
+    "code": "MAZ",
     "laps": 12,
-    "name": "Gaston Mazzacane",
+    "name": "Gaston Mazzacane",
     "number": 21,
     "position": "22",
     "team": "Minardi Fondmetal",
