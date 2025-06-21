@@ -8,6 +8,7 @@ import { getRaceSchedule } from "../scraper/race-schedule";
 import { getFastestLaps } from "../scraper/fastest-laps";
 
 import { Request, Response } from "express";
+import { getFullRaceResults } from "../server";
 
 export const driverLineUp = async (req: Request, res: Response): Promise<void> => {
     try {
@@ -83,6 +84,18 @@ export const fastestLaps = async (req: Request, res: Response) => {
         const { year } = req.params;
 
         const data = await getFastestLaps(parseInt(year));
+        res.json(data);
+    } catch (err: any) {
+        res.status(500).json({ error: err.message.toString() });
+    }
+};
+
+export const fullRaceResults = async (req: Request, res: Response) => {
+    try {
+        const { year } = req.params;
+        const raceName = req.query.raceName as string;
+
+        const data = await getFullRaceResults(parseInt(year), raceName);
         res.json(data);
     } catch (err: any) {
         res.status(500).json({ error: err.message.toString() });

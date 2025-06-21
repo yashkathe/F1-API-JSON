@@ -12,31 +12,48 @@ export const getRaceSchedule = async (year: number = new Date().getFullYear()): 
         const response = await axios(`${dynamicLinks.raceSchedule}/${year}.html`);
         const $ = cheerio.load(response.data);
 
-        $("a.outline-offset-4").each(function () {
-            const round: string = $(this).find("a.outline-offset-4 > fieldset:nth-child(1) > legend:nth-child(1) > p:nth-child(1)").text().trim();
-            const dateDays1: string = $(this).find("div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > p:nth-child(1) > span:nth-child(1)").text().trim();
-            const dateDays2: string = $(this).find("div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > p:nth-child(1) > span:nth-child(1)").text().trim();
-            const dateMonth1: string = $(this).find("div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > p:nth-child(1) > span:nth-child(1)").text().trim();
-            const dateMonth2: string = $(this)
-                .find("div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > span:nth-child(1) > span:nth-child(1)")
-                .text()
-                .trim();
-            const raceCountry: string = $(this)
-                .find("a.outline-offset-4 > fieldset:nth-child(1) > div:nth-child(2) > div:nth-child(3) > div:nth-child(1) > p:nth-child(1)")
-                .text()
-                .trim();
-            const eventTitle: string = $(this)
-                .find("a.outline-offset-4 > fieldset:nth-child(1) > div:nth-child(2) > div:nth-child(3) > div:nth-child(2) > p:nth-child(1)")
-                .text()
-                .trim();
+        $("a.group").each(function () {
+            let round: string = $(this).find("div:nth-child(1) > div:nth-child(1) > span:nth-child(1) > span:nth-child(1)").text().trim();
+            let date: string = $(this).find("div:nth-child(1) > div:nth-child(1) > span:nth-child(1) > span:nth-child(2)").contents().get()[1];
+            date = $(date).text();
 
-            const dateDays = dateDays1 || dateDays2;
-            const dateMonth = dateMonth1 || dateMonth2;
+            let eventTitle: string = $(this).find("div:nth-child(1) > div:nth-child(1) > span:nth-child(3)").text().trim();
+            let raceCountry: string = $(this).find("div:nth-child(1) > div:nth-child(1) > span:nth-child(2) > p:nth-child(2)").text().trim();
+
+            //Semantics differ for the next race
+            if (round === "") {
+                round = $(this).find("div:nth-child(1) > div:nth-child(2) > span:nth-child(1) > span:nth-child(1)").text().trim();
+            }
+
+            //Yes four differ semantics
+            const dateGetPath: string[] = [
+                "div:nth-child(1) > div:nth-child(1) > span:nth-child(4)",
+                "div:nth-child(1) > div:nth-child(1) > div:nth-child(4) > span:nth-child(1)",
+                "div:nth-child(1) > div:nth-child(2) > div:nth-child(4) > span:nth-child(1)",
+            ];
+            let i = 0;
+            while (date === "") {
+                date = $(this).find(dateGetPath[i++]).text().trim();
+            }
+
+            //Semantics differ for the next race
+            if (eventTitle === "") eventTitle = $(this).find("div:nth-child(1) > div:nth-child(2) > span:nth-child(3)").text().trim();
+
+            //Semantics differ for the next race
+            if (raceCountry === "") raceCountry = $(this).find("div:nth-child(1) > div:nth-child(2) > span:nth-child(2) > p:nth-child(2)").text().trim();
+
+            date = date.replaceAll(" ", "");
+
+            //Cross-month
+            if (date.length > 8) {
+                const dateParts: string[] = [date.slice(0, 2), date.slice(2, 5), date.slice(6, 8), date.slice(8, 13)];
+                date = `${dateParts[0]}-${dateParts[2]}${dateParts[1]}-${dateParts[3]}`;
+            }
 
             if (round !== undefined && raceCountry !== undefined && eventTitle !== undefined) {
                 const singleSchedule = {
                     round,
-                    date: dateDays.concat("", dateMonth),
+                    date,
                     raceCountry,
                     eventTitle,
                 };
@@ -52,5 +69,3 @@ export const getRaceSchedule = async (year: number = new Date().getFullYear()): 
         throw new Error(error);
     }
 };
-
-getRaceSchedule(2024);

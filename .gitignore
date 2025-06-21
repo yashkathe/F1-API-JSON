@@ -1,3 +1,7 @@
 node_modules
 dist
 junk * log.env
+dev
+
+src/index.ts
+commit.bat
