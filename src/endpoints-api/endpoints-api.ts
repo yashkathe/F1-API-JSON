@@ -8,7 +8,7 @@ import { getRaceSchedule } from "../scraper/race-schedule";
 import { getFastestLaps } from "../scraper/fastest-laps";
 
 import { Request, Response } from "express";
-import { getFullRaceResults } from "../server";
+import { getFullQualiResults, getFullRaceResults } from "../server";
 
 export const driverLineUp = async (req: Request, res: Response): Promise<void> => {
     try {
@@ -101,6 +101,23 @@ export const fullRaceResults = async (req: Request, res: Response) => {
             });
 
         const data = await getFullRaceResults(parseInt(year), raceName);
+        res.json(data);
+    } catch (err: any) {
+        res.status(500).json({ error: err.message.toString() });
+    }
+};
+
+export const fullQualiResults = async (req: Request, res: Response) => {
+    try {
+        const { year } = req.params;
+        const raceName = req.query.raceName as string;
+
+        if (!raceName || !year)
+            res.status(400).json({
+                error: "The year must be greater than 1950 and less than or equal to the current year. The race name must be listed in the official calendar.",
+            });
+
+        const data = await getFullQualiResults(parseInt(year), raceName);
         res.json(data);
     } catch (err: any) {
         res.status(500).json({ error: err.message.toString() });
