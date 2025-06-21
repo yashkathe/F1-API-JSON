@@ -7,7 +7,7 @@ import { isHallOfFame } from "../types/types";
 
 export const getWorldChampions = async (): Promise<isHallOfFame[]> => {
     try {
-        let worldChampions: isHallOfFame[] = [];
+        const worldChampions: isHallOfFame[] = [];
 
         const response = await axios(staticLinks.hallOfFame);
         const $ = cheerio.load(response.data);
@@ -28,7 +28,7 @@ export const getWorldChampions = async (): Promise<isHallOfFame[]> => {
             throw new Error(" No data found");
         }
         return worldChampions;
-    } catch (error: any) {
-        throw new Error(error);
+    } catch (error: unknown) {
+        throw new Error(error as string);
     }
 };

@@ -1,6 +1,3 @@
-import axios from "axios";
-import * as cheerio from "cheerio";
-
 import { staticLinks } from "../endpoints/endpoints";
 
 import { getF1Table, getResultURL } from "../utils/scrapping";
@@ -30,7 +27,7 @@ export async function getFullQualiResults(year: number = new Date().getFullYear(
             };
         }
         return getF1Table(qualiResultsURL, assignTableValues) as unknown as isFullQualiResult[];
-    } catch (error: any) {
-        throw new Error(error);
+    } catch (error: unknown) {
+        throw new Error(error as string);
     }
 }

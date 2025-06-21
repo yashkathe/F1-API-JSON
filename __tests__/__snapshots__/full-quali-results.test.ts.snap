@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`get race results 1`] = `
+exports[`get full quali results 1`] = `
 [
   {
     "laps": 11,

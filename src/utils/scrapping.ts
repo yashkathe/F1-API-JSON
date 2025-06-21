@@ -14,12 +14,12 @@ export async function getResultURL(year: number = new Date().getFullYear(), race
 
         if (!URL) throw "No data found";
         return URL;
-    } catch (error: any) {
-        throw new Error(error);
+    } catch (error: unknown) {
+        throw new Error(error as string);
     }
 }
 
-export async function getF1Table(url: string, callback: Function): Promise<Array<object>> {
+export async function getF1Table(url: string, callback: (driver: string[]) => object): Promise<Array<object>> {
     try {
         const results = await axios(url);
         const resultTable: Array<object> = [];
@@ -32,7 +32,7 @@ export async function getF1Table(url: string, callback: Function): Promise<Array
             resultTable.push(callback(driver));
         });
         return resultTable;
-    } catch (error: any) {
-        throw new Error(error);
+    } catch (error: unknown) {
+        throw new Error(error as string);
     }
 }

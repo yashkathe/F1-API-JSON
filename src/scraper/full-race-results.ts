@@ -1,11 +1,7 @@
-import axios from "axios";
-import * as cheerio from "cheerio";
-
 import { staticLinks } from "../endpoints/endpoints";
 
 import { isFullRaceResult } from "../types/types";
 import { getF1Table, getResultURL } from "../utils/scrapping";
-import { validateScrapedResult } from "../utils/validation";
 
 /**
  *
@@ -31,7 +27,7 @@ export const getFullRaceResults = async (year: number = new Date().getFullYear()
         }
 
         return getF1Table(raceResultsURL, assignTableValues) as unknown as isFullRaceResult[];
-    } catch (error: any) {
-        throw new Error(error);
+    } catch (error: unknown) {
+        throw new Error(error as string);
     }
 };

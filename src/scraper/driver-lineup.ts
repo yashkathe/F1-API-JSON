@@ -7,7 +7,7 @@ import { isDriver } from "../types/types";
 
 export const getDriverLineup = async (): Promise<isDriver[]> => {
     try {
-        let drivers: isDriver[] = [];
+        const drivers: isDriver[] = [];
 
         const response = await axios(staticLinks.drivers);
         const $ = cheerio.load(response.data);
@@ -58,8 +58,8 @@ export const getDriverLineup = async (): Promise<isDriver[]> => {
             throw new Error("No data found");
         }
         return drivers;
-    } catch (error: any) {
-        throw new Error(error);
+    } catch (error: unknown) {
+        throw new Error(error as string);
     }
 };
 

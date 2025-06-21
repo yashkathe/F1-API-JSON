@@ -7,7 +7,7 @@ import { isRaceResult } from "../types/types";
 
 export const getRaceResults = async (year: number = new Date().getFullYear()): Promise<isRaceResult[]> => {
     try {
-        let raceResults: isRaceResult[] = [];
+        const raceResults: isRaceResult[] = [];
 
         const response = await axios(`${dynamicLinks.rootLink}/${year}/${dynamicLinks.results}`);
         const $ = cheerio.load(response.data);
@@ -38,7 +38,7 @@ export const getRaceResults = async (year: number = new Date().getFullYear()): P
             throw new Error(" No data found");
         }
         return raceResults;
-    } catch (error: any) {
-        throw new Error(error);
+    } catch (error: unknown) {
+        throw new Error(error as string);
     }
 };
