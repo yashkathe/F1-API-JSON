@@ -67,3 +67,26 @@ export type isFullRaceResult = {
     points: number;
     number: number;
 };
+
+export type isFullQualiResult = {
+    position: string;
+    number: number;
+    name: string;
+    team: string;
+    times: qualiTimes;
+    laps: number;
+};
+
+export type isFullFastestLaps = {
+    position: string;
+    number: number;
+    code: string;
+    name: string;
+    team: string;
+    lap: number;
+    timeOfDay?: string;
+    time: string;
+    avgSpeed?: string;
+};
+
+export type qualiTimes = { q1: string; q2?: string; q3?: string };

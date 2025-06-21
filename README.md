@@ -93,14 +93,32 @@ myFunction();
 
 ![fastest lap](./readme/fastest_lap.png)
 
-### **8. getFullRaceResults**
+### **9. getFullRaceResults**
 
 | Parameter     | Description                               | Default Value |
 | ------------- | ----------------------------------------- | ------------- |
 | **Year**      | The season from which to retrieve results | Current year  |
 | **Race Name** | The name of the race                      | `"Australia"` |
 
-![fastest lap](./readme/full-race-results.png)
+![full race results](./readme/full-race-results.png)
+
+### **10. getFullQualiResults**
+
+| Parameter     | Description                               | Default Value |
+| ------------- | ----------------------------------------- | ------------- |
+| **Year**      | The season from which to retrieve results | Current year  |
+| **Race Name** | The name of the race                      | `"Australia"` |
+
+![full quali results](./readme/full-quali-results.png)
+
+### **11. getFullFastestLaps**
+
+| Parameter     | Description                               | Default Value |
+| ------------- | ----------------------------------------- | ------------- |
+| **Year**      | The season from which to retrieve results | Current year  |
+| **Race Name** | The name of the race                      | `"Australia"` |
+
+![full fastest laps](./readme/full-fastest-laps.png)
 
 ## Snapshots
 

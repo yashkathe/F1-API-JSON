@@ -8,3 +8,4 @@ export { getRaceResults } from "./scraper/race-results";
 export { getRaceSchedule } from "./scraper/race-schedule";
 export { getFullRaceResults } from "./scraper/full-race-results";
 export { getFullQualiResults } from "./scraper/full-quali-results";
+export { getFullFastestLaps } from "./scraper/full-fastest-laps";

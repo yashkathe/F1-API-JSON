@@ -7,7 +7,7 @@ import { isFastestLap } from "../types/types";
 
 export const getFastestLaps = async (year: number = new Date().getFullYear()): Promise<isFastestLap[]> => {
     try {
-        let fastestLaps: isFastestLap[] = [];
+        const fastestLaps: isFastestLap[] = [];
 
         const response = await axios(`${dynamicLinks.rootLink}/${year}/${dynamicLinks.fastestLap}`);
         const $ = cheerio.load(response.data);
@@ -42,7 +42,7 @@ export const getFastestLaps = async (year: number = new Date().getFullYear()): P
         }
 
         return fastestLaps;
-    } catch (error: any) {
-        throw new Error(error);
+    } catch (error: unknown) {
+        throw new Error(error as string);
     }
 };

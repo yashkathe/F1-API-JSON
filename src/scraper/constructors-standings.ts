@@ -7,7 +7,7 @@ import { isConstructorStanding } from "../types/types";
 
 export const getConstructorStandings = async (year: number = new Date().getFullYear()): Promise<isConstructorStanding[]> => {
     try {
-        let constructorStandings: isConstructorStanding[] = [];
+        const constructorStandings: isConstructorStanding[] = [];
 
         const response = await axios(`${dynamicLinks.rootLink}/${year}/${dynamicLinks.constructorStandings}`);
         const $ = cheerio.load(response.data);
@@ -29,7 +29,7 @@ export const getConstructorStandings = async (year: number = new Date().getFullY
             throw new Error(" No data found");
         }
         return constructorStandings;
-    } catch (error: any) {
-        throw new Error(error);
+    } catch (error: unknown) {
+        throw new Error(error as string);
     }
 };
