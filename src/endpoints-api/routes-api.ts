@@ -1,6 +1,6 @@
 import { Router } from "express";
 
-import { driverLineUp, teamLineUp, driverStandings, constructorStandings, worldChampions, raceResults, raceSchedule, fullRaceResults } from "./endpoints-api";
+import { driverLineUp, teamLineUp, driverStandings, constructorStandings, worldChampions, raceResults, raceSchedule, fullRaceResults, fullQualiResults } from "./endpoints-api";
 
 const router = Router();
 
@@ -22,5 +22,6 @@ router.get("/getRaceResults/", raceResults);
 router.get("/getRaceSchedule/:year", raceSchedule);
 router.get("/getRaceSchedule", raceSchedule);
 router.get("/getFullRaceResults/:year", fullRaceResults);
+router.get("/getFullQualiResults/:year", fullQualiResults);
 
 export default router;
