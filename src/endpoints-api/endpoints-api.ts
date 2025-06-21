@@ -123,3 +123,15 @@ export const fullQualiResults = async (req: Request, res: Response) => {
         res.status(500).json({ error: err.message.toString() });
     }
 };
+
+export const fullFastestLaps = async (req: Request, res: Response) => {
+    try {
+        const { year } = req.params;
+        const raceName = req.query.raceName as string;
+
+        const data = await getFullQualiResults(parseInt(year), raceName);
+        res.json(data);
+    } catch (err: any) {
+        res.status(500).json({ error: err.message.toString() });
+    }
+};

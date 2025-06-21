@@ -44,6 +44,7 @@ export const getDriverLineup = async (): Promise<isDriver[]> => {
             const driverImage: string | undefined = $(this).find("div:nth-child(1) > div:nth-child(1) > div:nth-child(4) > img:nth-child(2)").attr("src");
 
             if (firstName.length !== 0 && secondName.length !== 0 && team.length !== 0 && nationalityImage?.length !== 0 && driverImage?.length !== 0) {
+                // eslint-disable-next-line @typescript-eslint/no-unused-vars
                 const driver: isDriver = {
                     name: firstName.concat(" ", secondName),
                     team,
