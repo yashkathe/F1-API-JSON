@@ -111,6 +111,15 @@ myFunction();
 
 ![full quali results](./readme/full-quali-results.png)
 
+### **11. getFullFastestLaps**
+
+| Parameter     | Description                               | Default Value |
+| ------------- | ----------------------------------------- | ------------- |
+| **Year**      | The season from which to retrieve results | Current year  |
+| **Race Name** | The name of the race                      | `"Australia"` |
+
+![full fastest laps](./readme/full-fastest-laps.png)
+
 ## Snapshots
 
 If you want to have a look at the output from the given functions check [this](https://github.com/yashkathe/F1-API/tree/master/__tests__/__snapshots__).
