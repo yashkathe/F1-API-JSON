@@ -68,7 +68,8 @@ export type isFullRaceResult = {
     number: number;
 };
 
-export type isFullQualiResult = {
+export type fullQualiResult = {
+    code: string;
     position: string;
     number: number;
     name: string;
@@ -90,3 +91,11 @@ export type isFullFastestLaps = {
 };
 
 export type qualiTimes = { q1: string; q2?: string; q3?: string };
+
+export type qualiTimesBefore1996 = { quali1?: string; quali2?: string; qualiSummary?: string };
+
+export type qualiPartResult = { time: string; number: number; position: string };
+
+export type isFullQualiResult = Omit<fullQualiResult, "times"> & {
+    times: qualiTimes | qualiTimesBefore1996;
+};
