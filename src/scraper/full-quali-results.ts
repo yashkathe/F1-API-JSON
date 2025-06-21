@@ -23,7 +23,8 @@ export async function getFullQualiResults(year: number = new Date().getFullYear(
             return {
                 position: driver[0],
                 number: parseInt(driver[1]),
-                name: driver[2].slice(0, driver[2].length - 3),
+                name: driver[2].slice(0, driver[2].length - 3).replace(/\u00a0/g, " "),
+                code: driver[2].slice(driver[2].length - 3),
                 team: driver[3],
                 times: assignPropertyIfDefined([driver[4], driver[6] ? driver[5] : false, driver[7] ? driver[6] : false], ["q1", "q2", "q3"]) as qualiTimes,
                 laps: parseInt(driver[driver.length - 1]),

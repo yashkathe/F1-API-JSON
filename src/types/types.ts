@@ -69,6 +69,7 @@ export type isFullRaceResult = {
 };
 
 export type isFullQualiResult = {
+    code: string;
     position: string;
     number: number;
     name: string;
