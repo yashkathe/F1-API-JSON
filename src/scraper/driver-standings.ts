@@ -7,7 +7,7 @@ import { isDriverStanding } from "../types/types";
 
 export const getDriverStandings = async (year: number = new Date().getFullYear()): Promise<isDriverStanding[]> => {
     try {
-        let driverStandings: isDriverStanding[] = [];
+        const driverStandings: isDriverStanding[] = [];
 
         const response = await axios(`${dynamicLinks.rootLink}/${year}/${dynamicLinks.driverStandings}`);
         const $ = cheerio.load(response.data);
@@ -39,7 +39,7 @@ export const getDriverStandings = async (year: number = new Date().getFullYear()
             throw new Error(" No data found");
         }
         return driverStandings;
-    } catch (error: any) {
-        throw new Error(error);
+    } catch (error: unknown) {
+        throw new Error(error as string);
     }
 };

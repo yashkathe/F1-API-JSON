@@ -7,7 +7,7 @@ import { isTeam } from "../types/types";
 
 export const getTeamLineup = async (): Promise<isTeam[]> => {
     try {
-        let teams: isTeam[] = [];
+        const teams: isTeam[] = [];
         const response = await axios(staticLinks.teams);
         const $ = cheerio.load(response.data);
 
@@ -56,7 +56,7 @@ export const getTeamLineup = async (): Promise<isTeam[]> => {
             throw new Error(" No data found");
         }
         return teams;
-    } catch (error: any) {
-        throw new Error(error);
+    } catch (error: unknown) {
+        throw new Error(error as string);
     }
 };

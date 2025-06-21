@@ -3,7 +3,7 @@
 exports[`get race results 1`] = `
 [
   {
-    "driverCode": "NOR",
+    "code": "NOR",
     "laps": 57,
     "name": "Lando Norris",
     "number": 4,
@@ -12,7 +12,7 @@ exports[`get race results 1`] = `
     "time": "1:42:06.304",
   },
   {
-    "driverCode": "VER",
+    "code": "VER",
     "laps": 57,
     "name": "Max Verstappen",
     "number": 1,
@@ -21,7 +21,7 @@ exports[`get race results 1`] = `
     "time": "+0.895s",
   },
   {
-    "driverCode": "RUS",
+    "code": "RUS",
     "laps": 57,
     "name": "George Russell",
     "number": 63,
@@ -30,7 +30,7 @@ exports[`get race results 1`] = `
     "time": "+8.481s",
   },
   {
-    "driverCode": "ANT",
+    "code": "ANT",
     "laps": 57,
     "name": "Kimi Antonelli",
     "number": 12,
@@ -39,7 +39,7 @@ exports[`get race results 1`] = `
     "time": "+10.135s",
   },
   {
-    "driverCode": "ALB",
+    "code": "ALB",
     "laps": 57,
     "name": "Alexander Albon",
     "number": 23,
@@ -48,7 +48,7 @@ exports[`get race results 1`] = `
     "time": "+12.773s",
   },
   {
-    "driverCode": "STR",
+    "code": "STR",
     "laps": 57,
     "name": "Lance Stroll",
     "number": 18,
@@ -57,7 +57,7 @@ exports[`get race results 1`] = `
     "time": "+17.413s",
   },
   {
-    "driverCode": "HUL",
+    "code": "HUL",
     "laps": 57,
     "name": "Nico Hulkenberg",
     "number": 27,
@@ -66,7 +66,7 @@ exports[`get race results 1`] = `
     "time": "+18.423s",
   },
   {
-    "driverCode": "LEC",
+    "code": "LEC",
     "laps": 57,
     "name": "Charles Leclerc",
     "number": 16,
@@ -75,7 +75,7 @@ exports[`get race results 1`] = `
     "time": "+19.826s",
   },
   {
-    "driverCode": "PIA",
+    "code": "PIA",
     "laps": 57,
     "name": "Oscar Piastri",
     "number": 81,
@@ -84,7 +84,7 @@ exports[`get race results 1`] = `
     "time": "+20.448s",
   },
   {
-    "driverCode": "HAM",
+    "code": "HAM",
     "laps": 57,
     "name": "Lewis Hamilton",
     "number": 44,
@@ -93,7 +93,7 @@ exports[`get race results 1`] = `
     "time": "+22.473s",
   },
   {
-    "driverCode": "GAS",
+    "code": "GAS",
     "laps": 57,
     "name": "Pierre Gasly",
     "number": 10,
@@ -102,7 +102,7 @@ exports[`get race results 1`] = `
     "time": "+26.502s",
   },
   {
-    "driverCode": "TSU",
+    "code": "TSU",
     "laps": 57,
     "name": "Yuki Tsunoda",
     "number": 22,
@@ -111,7 +111,7 @@ exports[`get race results 1`] = `
     "time": "+29.884s",
   },
   {
-    "driverCode": "OCO",
+    "code": "OCO",
     "laps": 57,
     "name": "Esteban Ocon",
     "number": 31,
@@ -120,7 +120,7 @@ exports[`get race results 1`] = `
     "time": "+33.161s",
   },
   {
-    "driverCode": "BEA",
+    "code": "BEA",
     "laps": 57,
     "name": "Oliver Bearman",
     "number": 87,
@@ -129,7 +129,7 @@ exports[`get race results 1`] = `
     "time": "+40.351s",
   },
   {
-    "driverCode": "LAW",
+    "code": "LAW",
     "laps": 46,
     "name": "Liam Lawson",
     "number": 30,
@@ -138,7 +138,7 @@ exports[`get race results 1`] = `
     "time": "DNF",
   },
   {
-    "driverCode": "BOR",
+    "code": "BOR",
     "laps": 45,
     "name": "Gabriel Bortoleto",
     "number": 5,
@@ -147,7 +147,7 @@ exports[`get race results 1`] = `
     "time": "DNF",
   },
   {
-    "driverCode": "ALO",
+    "code": "ALO",
     "laps": 32,
     "name": "Fernando Alonso",
     "number": 14,
@@ -156,7 +156,7 @@ exports[`get race results 1`] = `
     "time": "DNF",
   },
   {
-    "driverCode": "SAI",
+    "code": "SAI",
     "laps": 0,
     "name": "Carlos Sainz",
     "number": 55,
@@ -165,7 +165,7 @@ exports[`get race results 1`] = `
     "time": "DNF",
   },
   {
-    "driverCode": "DOO",
+    "code": "DOO",
     "laps": 0,
     "name": "Jack Doohan",
     "number": 7,
@@ -174,7 +174,7 @@ exports[`get race results 1`] = `
     "time": "DNF",
   },
   {
-    "driverCode": "HAD",
+    "code": "HAD",
     "laps": 0,
     "name": "Isack Hadjar",
     "number": 6,

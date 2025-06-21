@@ -95,11 +95,6 @@ export const fullRaceResults = async (req: Request, res: Response) => {
         const { year } = req.params;
         const raceName = req.query.raceName as string;
 
-        if (!raceName || !year)
-            res.status(400).json({
-                error: "The year must be greater than 1950 and less than or equal to the current year. The race name must be listed in the official calendar.",
-            });
-
         const data = await getFullRaceResults(parseInt(year), raceName);
         res.json(data);
     } catch (err: any) {
@@ -108,6 +103,18 @@ export const fullRaceResults = async (req: Request, res: Response) => {
 };
 
 export const fullQualiResults = async (req: Request, res: Response) => {
+    try {
+        const { year } = req.params;
+        const raceName = req.query.raceName as string;
+
+        const data = await getFullQualiResults(parseInt(year), raceName);
+        res.json(data);
+    } catch (err: any) {
+        res.status(500).json({ error: err.message.toString() });
+    }
+};
+
+export const fullFastestLaps = async (req: Request, res: Response) => {
     try {
         const { year } = req.params;
         const raceName = req.query.raceName as string;

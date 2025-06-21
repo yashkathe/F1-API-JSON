@@ -7,7 +7,7 @@ import { isDriver } from "../types/types";
 
 export const getDriverLineup = async (): Promise<isDriver[]> => {
     try {
-        let drivers: isDriver[] = [];
+        const drivers: isDriver[] = [];
 
         const response = await axios(staticLinks.drivers);
         const $ = cheerio.load(response.data);
@@ -44,6 +44,7 @@ export const getDriverLineup = async (): Promise<isDriver[]> => {
             const driverImage: string | undefined = $(this).find("div:nth-child(1) > div:nth-child(1) > div:nth-child(4) > img:nth-child(2)").attr("src");
 
             if (firstName.length !== 0 && secondName.length !== 0 && team.length !== 0 && nationalityImage?.length !== 0 && driverImage?.length !== 0) {
+                // eslint-disable-next-line @typescript-eslint/no-unused-vars
                 const driver: isDriver = {
                     name: firstName.concat(" ", secondName),
                     team,
@@ -58,8 +59,8 @@ export const getDriverLineup = async (): Promise<isDriver[]> => {
             throw new Error("No data found");
         }
         return drivers;
-    } catch (error: any) {
-        throw new Error(error);
+    } catch (error: unknown) {
+        throw new Error(error as string);
     }
 };
 

@@ -60,7 +60,7 @@ export type isFastestLap = {
 
 export type isFullRaceResult = {
     name: string;
-    driverCode: string;
+    code: string;
     team: string;
     laps: number;
     time: string;
@@ -76,6 +76,18 @@ export type fullQualiResult = {
     team: string;
     times: qualiTimes;
     laps: number;
+};
+
+export type isFullFastestLaps = {
+    position: string;
+    number: number;
+    code: string;
+    name: string;
+    team: string;
+    lap: number;
+    timeOfDay?: string;
+    time: string;
+    avgSpeed?: string;
 };
 
 export type qualiTimes = { q1: string; q2?: string; q3?: string };
