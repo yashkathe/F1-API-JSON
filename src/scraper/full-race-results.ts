@@ -18,10 +18,11 @@ export const getFullRaceResults = async (year: number = new Date().getFullYear()
     try {
         const resultsURL = await getResultURL(year, raceName);
         const raceResultsURL = `${staticLinks.fullResults}/${year}/${resultsURL.slice(23, resultsURL.length)}`;
-        function assignTableValues(driver: string[]) {
+        function assignTableValues(driver: string[]): isFullRaceResult {
+            console.log(driver);
             return {
                 name: driver[2].slice(0, driver[2].length - 3),
-                driverCode: driver[2].slice(driver[2].length - 3),
+                code: driver[2].slice(driver[2].length - 3),
                 team: driver[3],
                 laps: Number(driver[4]),
                 time: driver[5],

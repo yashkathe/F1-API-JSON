@@ -95,11 +95,6 @@ export const fullRaceResults = async (req: Request, res: Response) => {
         const { year } = req.params;
         const raceName = req.query.raceName as string;
 
-        if (!raceName || !year)
-            res.status(400).json({
-                error: "The year must be greater than 1950 and less than or equal to the current year. The race name must be listed in the official calendar.",
-            });
-
         const data = await getFullRaceResults(parseInt(year), raceName);
         res.json(data);
     } catch (err: any) {
