@@ -1,10 +1,6 @@
-src
-__tests__
-node_modules
-junk
-readme
-jest.config.jest
-.prettierrc.json
-.vscode
-.gitignore
-.github
+src;
+__tests__;
+node_modules;
+junk;
+readme;
+jest.config.jest.prettierrc.json.vscode.gitignore.github;

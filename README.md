@@ -2,7 +2,7 @@
 
 **Completely Updated and Adjusted according to the New Changes in Formula 1's Website ~ 2025!**
 
-![f1](https://logodownload.org/wp-content/uploads/2016/11/formula-1-logo-7.png)  
+![f1](https://logodownload.org/wp-content/uploads/2016/11/formula-1-logo-7.png)
 
 The scraper scrapes this website: <https://www.formula1.com>
 
@@ -13,83 +13,83 @@ npm i f1-api-node
 ```
 
 ## Example snippet
-  
+
 The following function will print the current lineup of F1 drivers.
 
 ```javascript
-const f1Api = require('f1-api-node') 
+const f1Api = require("f1-api-node");
 
 const myFunction = async () => {
-    const driverLineup = await f1Api.getDriverData() // replace this function
-    console.log(driverLineup)
-}
+    const driverLineup = await f1Api.getDriverData(); // replace this function
+    console.log(driverLineup);
+};
 
-myFunction()
+myFunction();
 ```
 
 ## Functions
 
-### **1. getConstructorStandings**  
-  
-| Description | Needs Paramter ? | Paramter Description | Default Argument |
-|:------------|------------------|----------------------|------------------|
-| Fetch Constructors standings from points table | Yes - 1 | The year from which you want to extract points table for (1950 - current) | current year |
+### **1. getConstructorStandings**
+
+| Description                                    | Needs Paramter ? | Paramter Description                                                      | Default Argument |
+| :--------------------------------------------- | ---------------- | ------------------------------------------------------------------------- | ---------------- |
+| Fetch Constructors standings from points table | Yes - 1          | The year from which you want to extract points table for (1950 - current) | current year     |
 
 ![const stnd](./readme/constructor_standing.png)
 
 ### **2. getDriverStandings**
 
-| Description | Needs Paramter ? | Paramter Description | Default Argument |
-|:------------|------------------|----------------------|------------------|
-| Fetch F1 driver standings from points table | Yes - 1 |  The year from which you want to extract points table for (1950 - current) | current year |
+| Description                                 | Needs Paramter ? | Paramter Description                                                      | Default Argument |
+| :------------------------------------------ | ---------------- | ------------------------------------------------------------------------- | ---------------- |
+| Fetch F1 driver standings from points table | Yes - 1          | The year from which you want to extract points table for (1950 - current) | current year     |
 
 ![driver stnd](./readme/driver_standing.png)
 
-### **3. getDriverLineup**  
+### **3. getDriverLineup**
 
-| Description | Needs Paramter ? | Paramter Description | Default Argument |
-|:------------|------------------|----------------------|------------------|
-| Fetch the current lineup of F1 drivers | No |  - | - |
+| Description                            | Needs Paramter ? | Paramter Description | Default Argument |
+| :------------------------------------- | ---------------- | -------------------- | ---------------- |
+| Fetch the current lineup of F1 drivers | No               | -                    | -                |
 
 ![driver lineup](./readme/driver_lineup.png)
 
-### **4. getTeamLineup**  
+### **4. getTeamLineup**
 
-| Description | Needs Paramter ? | Paramter Description | Default Argument |
-|:------------|------------------|----------------------|------------------|
-| Fetch the current list of F1 teams | No |  - | - |
+| Description                        | Needs Paramter ? | Paramter Description | Default Argument |
+| :--------------------------------- | ---------------- | -------------------- | ---------------- |
+| Fetch the current list of F1 teams | No               | -                    | -                |
 
 ![team lineup](./readme/team_lineup.png)
 
-### **5. getWorldChampions**  
+### **5. getWorldChampions**
 
-| Description | Needs Paramter ? | Paramter Description | Default Argument |
-|:------------|------------------|----------------------|------------------|
-|   Fetch all the world champions   | No |  - | - |
+| Description                   | Needs Paramter ? | Paramter Description | Default Argument |
+| :---------------------------- | ---------------- | -------------------- | ---------------- |
+| Fetch all the world champions | No               | -                    | -                |
 
 ![hall of fame](./readme/world_champion.png)
 
 ### **6. getRaceResults**
 
-| Description | Needs Paramter ? | Paramter Description | Default Argument |
-|:------------|------------------|----------------------|------------------|
-|   Fetch race results of all the grand prix in a given year   | Yes - 1  | The year from which you want to extract race results (1950 - current) | - |
+| Description                                              | Needs Paramter ? | Paramter Description                                                  | Default Argument |
+| :------------------------------------------------------- | ---------------- | --------------------------------------------------------------------- | ---------------- |
+| Fetch race results of all the grand prix in a given year | Yes - 1          | The year from which you want to extract race results (1950 - current) | -                |
 
 ![race results](./readme/race_results.png)
 
 ### **7. getRaceSchedule**
-  
-| Description | Needs Paramter ? | Paramter Description | Default Argument |
-|:------------|------------------|----------------------|------------------|
-| Fetch race schedule for an entire year | Yes - 1 | The year from which you want to extract race schedule | current year |
+
+| Description                            | Needs Paramter ? | Paramter Description                                  | Default Argument |
+| :------------------------------------- | ---------------- | ----------------------------------------------------- | ---------------- |
+| Fetch race schedule for an entire year | Yes - 1          | The year from which you want to extract race schedule | current year     |
 
 ![alt text](/readme/race_schedule.png)
 
-### **8. getFastestLaps**  
-  
-| Description | Needs Paramter ? | Paramter Description | Default Argument |
-|:------------|------------------|----------------------|------------------|
-| Fetch fastest laps for all races in a year | Yes - 1 | The year from which you want to extract fastest laps | current year |
+### **8. getFastestLaps**
+
+| Description                                | Needs Paramter ? | Paramter Description                                 | Default Argument |
+| :----------------------------------------- | ---------------- | ---------------------------------------------------- | ---------------- |
+| Fetch fastest laps for all races in a year | Yes - 1          | The year from which you want to extract fastest laps | current year     |
 
 ![fastest lap](./readme/fastest_lap.png)
 
@@ -101,7 +101,7 @@ If you want to have a look at the output from the given functions check [this](h
 
 The docker image of the rest api can be found on [Docker Hub](https://hub.docker.com/repository/docker/katheyash/f1-api-node/general)
 
-- ### Pull the Image and start the development in no time  
+-   ### Pull the Image and start the development in no time
 
 #### 1. Pull from Docker Hub
 
@@ -115,13 +115,13 @@ docker pull katheyash/f1-api-node:tagname
 docker pull ghcr.io/yashkathe/f1-api-node:2
 ```
 
-- ### The default port is 80
+-   ### The default port is 80
 
 ```bash
 docker run -p 80:80 --name f1-api-node-test-1 katheyash/f1-api-node:1
 ```
 
-- ### If .env file exists
+-   ### If .env file exists
 
 ```bash
 docker run --env-file ./.env -p 3001:3001 --name f1-api-node-test-1 f1-api-node:1
@@ -134,4 +134,4 @@ Please use with caution and try to limit the rate and amount of your requests if
 
 ## Report Problems
 
-If you have any problems regarding this project, read the following [disclaimer](https://github.com/yashkathe/F1-API/blob/master/DISCLAIMER.md).  
+If you have any problems regarding this project, read the following [disclaimer](https://github.com/yashkathe/F1-API/blob/master/DISCLAIMER.md).
