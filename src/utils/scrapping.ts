@@ -29,6 +29,9 @@ export async function getF1Table(url: string, callback: (driver: string[]) => ob
                 .find("td p")
                 .map((_i, el) => $(el).text())
                 .get();
+
+            if (driver.length < 2) throw Error("Data from table can't be loaded");
+
             resultTable.push(callback(driver));
         });
         return resultTable;
