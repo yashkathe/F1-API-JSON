@@ -3,19 +3,19 @@
 exports[`constrcutor standings 1`] = `
 [
   {
-    "points": 374,
+    "points": 417,
     "position": 1,
     "team": "McLaren",
   },
   {
-    "points": 199,
+    "points": 210,
     "position": 2,
-    "team": "Mercedes",
+    "team": "Ferrari",
   },
   {
-    "points": 183,
+    "points": 209,
     "position": 3,
-    "team": "Ferrari",
+    "team": "Mercedes",
   },
   {
     "points": 162,
@@ -28,22 +28,22 @@ exports[`constrcutor standings 1`] = `
     "team": "Williams",
   },
   {
-    "points": 28,
+    "points": 36,
     "position": 6,
+    "team": "Racing Bulls",
+  },
+  {
+    "points": 29,
+    "position": 7,
     "team": "Haas",
   },
   {
     "points": 28,
-    "position": 7,
-    "team": "Racing Bulls",
-  },
-  {
-    "points": 22,
     "position": 8,
     "team": "Aston Martin",
   },
   {
-    "points": 20,
+    "points": 26,
     "position": 9,
     "team": "Kick Sauber",
   },

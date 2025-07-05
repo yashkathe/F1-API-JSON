@@ -10,17 +10,7 @@ exports[`current teams data 1`] = `
       "Lando Norris",
     ],
     "name": "McLaren",
-    "points": 374,
-  },
-  {
-    "carImage": "https://media.formula1.com/image/upload/c_lfill,h_224/q_auto/d_common:f1:2025:fallback:car:2025fallbackcarright.webp/v1740000000/common/f1/2025/mercedes/2025mercedescarright.webp",
-    "carLogo": "https://media.formula1.com/image/upload/c_lfill,w_48/q_auto/v1740000000/common/f1/2025/mercedes/2025mercedeslogowhite.webp",
-    "drivers": [
-      "George Russell",
-      "Kimi Antonelli",
-    ],
-    "name": "Mercedes",
-    "points": 199,
+    "points": 417,
   },
   {
     "carImage": "https://media.formula1.com/image/upload/c_lfill,h_224/q_auto/d_common:f1:2025:fallback:car:2025fallbackcarright.webp/v1740000000/common/f1/2025/ferrari/2025ferraricarright.webp",
@@ -30,7 +20,17 @@ exports[`current teams data 1`] = `
       "Lewis Hamilton",
     ],
     "name": "Ferrari",
-    "points": 183,
+    "points": 210,
+  },
+  {
+    "carImage": "https://media.formula1.com/image/upload/c_lfill,h_224/q_auto/d_common:f1:2025:fallback:car:2025fallbackcarright.webp/v1740000000/common/f1/2025/mercedes/2025mercedescarright.webp",
+    "carLogo": "https://media.formula1.com/image/upload/c_lfill,w_48/q_auto/v1740000000/common/f1/2025/mercedes/2025mercedeslogowhite.webp",
+    "drivers": [
+      "George Russell",
+      "Kimi Antonelli",
+    ],
+    "name": "Mercedes",
+    "points": 209,
   },
   {
     "carImage": "https://media.formula1.com/image/upload/c_lfill,h_224/q_auto/d_common:f1:2025:fallback:car:2025fallbackcarright.webp/v1740000000/common/f1/2025/redbullracing/2025redbullracingcarright.webp",
@@ -53,16 +53,6 @@ exports[`current teams data 1`] = `
     "points": 55,
   },
   {
-    "carImage": "https://media.formula1.com/image/upload/c_lfill,h_224/q_auto/d_common:f1:2025:fallback:car:2025fallbackcarright.webp/v1740000000/common/f1/2025/haas/2025haascarright.webp",
-    "carLogo": "https://media.formula1.com/image/upload/c_lfill,w_48/q_auto/v1740000000/common/f1/2025/haas/2025haaslogowhite.webp",
-    "drivers": [
-      "Esteban Ocon",
-      "Oliver Bearman",
-    ],
-    "name": "Haas",
-    "points": 28,
-  },
-  {
     "carImage": "https://media.formula1.com/image/upload/c_lfill,h_224/q_auto/d_common:f1:2025:fallback:car:2025fallbackcarright.webp/v1740000000/common/f1/2025/racingbulls/2025racingbullscarright.webp",
     "carLogo": "https://media.formula1.com/image/upload/c_lfill,w_48/q_auto/v1740000000/common/f1/2025/racingbulls/2025racingbullslogowhite.webp",
     "drivers": [
@@ -70,7 +60,17 @@ exports[`current teams data 1`] = `
       "Isack Hadjar",
     ],
     "name": "Racing Bulls",
-    "points": 28,
+    "points": 36,
+  },
+  {
+    "carImage": "https://media.formula1.com/image/upload/c_lfill,h_224/q_auto/d_common:f1:2025:fallback:car:2025fallbackcarright.webp/v1740000000/common/f1/2025/haas/2025haascarright.webp",
+    "carLogo": "https://media.formula1.com/image/upload/c_lfill,w_48/q_auto/v1740000000/common/f1/2025/haas/2025haaslogowhite.webp",
+    "drivers": [
+      "Esteban Ocon",
+      "Oliver Bearman",
+    ],
+    "name": "Haas",
+    "points": 29,
   },
   {
     "carImage": "https://media.formula1.com/image/upload/c_lfill,h_224/q_auto/d_common:f1:2025:fallback:car:2025fallbackcarright.webp/v1740000000/common/f1/2025/astonmartin/2025astonmartincarright.webp",
@@ -80,7 +80,7 @@ exports[`current teams data 1`] = `
       "Fernando Alonso",
     ],
     "name": "Aston Martin",
-    "points": 22,
+    "points": 28,
   },
   {
     "carImage": "https://media.formula1.com/image/upload/c_lfill,h_224/q_auto/d_common:f1:2025:fallback:car:2025fallbackcarright.webp/v1740000000/common/f1/2025/kicksauber/2025kicksaubercarright.webp",
@@ -90,7 +90,7 @@ exports[`current teams data 1`] = `
       "Gabriel Bortoleto",
     ],
     "name": "Kick Sauber",
-    "points": 20,
+    "points": 26,
   },
   {
     "carImage": "https://media.formula1.com/image/upload/c_lfill,h_224/q_auto/d_common:f1:2025:fallback:car:2025fallbackcarright.webp/v1740000000/common/f1/2025/alpine/2025alpinecarright.webp",
